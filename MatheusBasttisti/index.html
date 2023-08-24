@@ -2,11 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VueJs Iniciante</title>
+    <!-- VueJs -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- Nosso js -->
+    <script src="src/app.js" defer ></script>
 </head>
 <body>
-    <h1>Teste</h1>
+   
+    <div id="app">
+
+        <form  id="app-form">
+            <input type="text" v-model="input_name" placeholder="Digite   o seu nome " >
+            <input type="submit" value="Enviar" v-on:click="submitForm" >
+
+        </form>
+        <p>O nome do author é {{ name }} com a idade de {{ idade}} anos. </p>
+        <p>Data binding: {{ input_name }}</p>
+
+    </div>
     
 </body>
 </html>
