@@ -25,6 +25,13 @@ Projeto em Vue.js um site de solicitação de lanche.
 > Na documentação do vue:
 	npm install vue ( funcionou );
 	
+Caso a versão que esta instalada no pc agora, não for a mais recente, pode fazer a atualização do Vue. 
+
+> Atualizar o Vue.js:
+	vue upgrade --next
+	
+	
+	
 	
 	
 ## :cd: Programas
@@ -57,9 +64,9 @@ Dentro do repositório  , pelo terminal, linha de comando de como criar o projet
 
  <code>	vue create 2_projeto_vue </code>
 	
- #### Selecionar Manualmente
+#### Selecionar Manualmente
    
- Marque:
+Marque:
 
 - [x] Choose Vue version
 - [x] Babel
@@ -78,6 +85,9 @@ Salvar para futuros Projetos:
 
 - [x] N
 
+
+Selecionamos com a barra de espaço no teclado;
+
 	
 	
 ### Projeto Criado
@@ -89,7 +99,7 @@ Por exemplo:
 
 o arquivo principal do video é **main.js** e o meu é **main.ts**;
 
-Indicação de que o video irá usar js ( javascript) e eu ( posso usar, não quer dizer que irei usar )Typescript;
+Indicação de que o video irá usar js ( javascript) e no meu projeto ( posso usar, não quer dizer que irei usar)Typescript;
 	
 ### Executando
 
@@ -144,12 +154,81 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 
 
 
-- [ ]  Aula 04 - Utilizando o Vue CLI
+- [x]  Aula 04 - Utilizando o Vue CLI
 
 * CLI é ferramenta de linha de comando do Vue;
 * Possibilita criar e configurar projetos de forma avançada;
-- [ ]  Aula 05 - Criando Componentes
-- [ ]  Aula 06 - Dados em Componentes (data)
+
+
+- [x]  Aula 05 - Criando Componentes
+
+* Componentes permitem dividir nosso layout em partes;
+* Cada componente tem a sua responsabilidade;
+* Entidades divididas assim, deixa o projeto com a separação das responsabilidades maior; 
+* Cada componente tem seu CSS e os dados que manipula;
+
+Para reiniciar o projeto, iremos limpar todo o conteudo do App.vue e do `src -> components -> HelloWorld.vue` ;
+
+App.vue é a página inicial do código, será nele que teremos o que será exibido na aplicação;
+
+A tag `template` é a tag que indica que dentro dela haverá informações HTML; 
+
+Este arquivo só irá funcionar, depois que contarmos para a aplicacao que este template é o principal da aplicação, fazemos isto chamando o script e anunciando: 
+
+<code> 
+<script>
+	export default {
+		name: 'App'
+	}
+</script> 
+</code>
+
+Entretanto na minha aplicação ainda há erros,  na aula não. 
+
+Alguns ajustes no meu codigo para dar certo. 
+
+<img src="/imgs/primeiraPagina.jpg" />
+
+E funcionou!!!!
+
+> App.vue
+
+Vamos importar o componente criado para dentro do app ( components/PrimeiroComponente.vue ), isto se faz dentro do script; 
+
+Importação não significa uso, importamos,  mas agora temos de definir, que iremos usar. 
+
+Assim no export, depois do nome da página (name: 'App') iremos acrescentar o componentes. 
+
+Acrescentamos o componente, agora ele esta pronto para ser usado; 
+
+<img src="/imgs/primeiraPaginaVue.jpg" />
+
+
+- [x]  Aula 06 - Dados em Componentes (data)
+
+* Componentes podem conter dados;
+* Os dados dos componentes podem ser inicializados com algum valor e podem ser modificados dura a execução do programa;
+* Os dados ficam em uma função chamada `data`;
+* A função `data` retorna os dados em forma de òbjeto`;
+
+Definimos dados dentro do 'data' usando o `nome_do_dado` acrescido de `:` e o `valor_do_dado`;
+
+Cada dados a ser adicionado, é separado com uma virgula no final (,) se não for o último;
+
+Os componentes do Vue, podem ter apenas uma elemento root, ou seja, um principal. 
+
+No exemplo existia um a 'h1' e um 'p', para resolver a situação, acrescentamos um elemento externo,  'div', que se tornou o root deste componente.
+
+Mesmo a aplicação usando componentes, ela mesma pode usar o `data` para ter alguma informação apresentada. 
+
+Até agora o que mais me chama a atenção no Vue.js é a modificação no código e em menos de 2 segundos modificação na página também. Sem precisar adicionar o modemon  ou outro. 
+
+
+
+
+
+
+
 - [ ]  Aula 07 - Entendendo os Lifecycle Hooks ( ciclo de vida )
 - [ ]  Aula 08 - Hierarquia de Componentes
 - [ ]  Aula 09 - Conhecendo as diretivas ( v-if, v-show, v-for )
@@ -180,50 +259,6 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 - [ ]  Aula 34 - #Conclusão do Curso!
 
 
-## Aula 05
-### Componentes
-* Layout dividido em partes;
-* cada componente com suas responsabilidades;
-* Cada componente com o seu css e seus dados; 
-
-Para reiniciar o projeto, iremos limpar todo o conteudo do App.vue e do src -> components -> HelloWorld.vue ;
-
-App.vue é a página inicial do código, será nele que teremos o que será exibido na aplicação; 
-
-Este arquivo só irá funcionar, depois que contarmos para a aplicacao que este template é o principal da aplicação, fazemos isto chamadno o script e anunciando: 
-
-<code> <script>
-		export default {
-		   name: 'App'
-		}
-	</script> </code>
-
-	
-
-Entretanto na minha aplicação ainda há erros,  na aula não. 
-
-Alguns ajustes no meu codigo para dar certo. 
-
-<img src="/imgs/primeiraPagina.jpg" />
-
-E funcionou!!!!
-
--> App.vue
-
-Vamos importar o componente criado para dentro do app ( components/PrimeiroComponente.vue ), isto se faz dentro do script; 
-
-Importação não significa uso, importamos,  mas agora temos de definir, que iremos usar. 
-
-Assim no export, depois do nome da página (name: 'App') iremos acrescentar o componentes. 
-
-Acrescentamos o componente, agora ele esta pronto para ser usado; 
-
-<img src="/imgs/primeiraPaginaVue.jpg" />
-
-
-
- 
- 
 ## Próxima
 
 	
