@@ -115,7 +115,7 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 
 - [x] Aula 01 - Introdução
 
-<h2>O que é Vue</h2>
+<h4>O que é Vue</h4>
 
 * Framework progressivo para criar interfaces;
 * Construção de layouts baseada em componentes;
@@ -123,7 +123,7 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 * Framework front-end mais utilizado;
 * Com módulos para manipulação de rotas ( Vue Router) e Status ( Vuex);
 
-<h2>Pré-requisitos</h2> 
+<h4>Pré-requisitos</h4> 
 
 * Conhecimento intermediário de HTML, CSS e Javascript; 
 * Recursos do javascript na versão ES6 ( map, filter, reduce,  ... );
