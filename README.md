@@ -175,8 +175,7 @@ A tag `template` é a tag que indica que dentro dela haverá informações HTML;
 
 Este arquivo só irá funcionar, depois que contarmos para a aplicacao que este template é o principal da aplicação, fazemos isto chamando o script e anunciando: 
 
-<code> 
-<script>
+<code><script>
 	export default {
 		name: 'App'
 	}
@@ -224,12 +223,39 @@ Mesmo a aplicação usando componentes, ela mesma pode usar o `data` para ter al
 Até agora o que mais me chama a atenção no Vue.js é a modificação no código e em menos de 2 segundos modificação na página também. Sem precisar adicionar o modemon  ou outro. 
 
 
+- [x]  Aula 07 - Entendendo os Life Cycle Hooks ( ciclo de vida )
+
+* Os Life Cycle Hooks são eventos que podem ser ativados em determinadas partes da execução do programa;
+* Executa o Código no momento que o componente é criado;
+* Podendo alterar a aplicação em diversas etapas diferentes; 
+* Exemplo: `created()`,  `mounted()` 
+
+Criando um novo componente:
+
+- :open_file_folder: src
+	- :open_file_folder: components
+		- :pincel: LifeCycle.vue
+		
+
+Criaremos o componente, com as informações básicas para teste, e depois importaremos na aplicação, e adicionaremos na área básica dos componentes. 
+
+Quando criamos o componente 'LifeCicle' dissemos para ele que o seu nome era "Ainda não sei", quando este componente foi criado, e a ação "created" foi executada, trocamos o nome dele para "Isabel". Quando o componente for montado "mounted", apresentado na tela, teremos um terceiro nome. 
+
+Apenas trocando o nome,  parece sem propósito, mas assim que tiver em produção e cada momento dele estiver recebendo um valor e uma ação que deve ser realizado, neste momento veremos a agilidade do componente. 
+
+Ou seja: Eventos acontecendo em determinada etapa da aplicação.  
+
+Uma das etapas mais usada é no carregamentos das informações do banco.
+
+Neste componente 
 
 
 
 
 
-- [ ]  Aula 07 - Entendendo os Lifecycle Hooks ( ciclo de vida )
+
+
+
 - [ ]  Aula 08 - Hierarquia de Componentes
 - [ ]  Aula 09 - Conhecendo as diretivas ( v-if, v-show, v-for )
 - [ ]  Aula 10 - Atributos Dinâmicos

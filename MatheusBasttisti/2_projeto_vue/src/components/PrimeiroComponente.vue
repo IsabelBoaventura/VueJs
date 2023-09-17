@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="border: solid 3px; border-radius: 3%;">
         <h1>Olá Vue! </h1>
         <p>Sou o Componente: <b>PrimeiroComponente.vue</b> </p>
         <h2>Dados:</h2>
