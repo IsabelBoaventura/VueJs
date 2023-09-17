@@ -109,9 +109,44 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 	
 (repetindo a mesma informação para recordar )
 
-### Estrtutura
+## :chart_with_upwards_trend: Estrutura e Conteúdo das Aulas
 
--> 
+
+
+- [ ]  Aula 01 - Introdução
+- [ ]  Aula 02 - Como Instalar o Vue
+- [ ]  Aula 03 - Inputs e Data Binding
+- [ ]  Aula 04 - Utilizando o Vue CLI
+- [ ]  Aula 05 - Criando Componentes
+- [ ]  Aula 06 - Dados em Componentes (data)
+- [ ]  Aula 07 - Entendendo os Lifecycle Hooks ( ciclo de vida )
+- [ ]  Aula 08 - Hierarquia de Componentes
+- [ ]  Aula 09 - Conhecendo as diretivas ( v-if, v-show, v-for )
+- [ ]  Aula 10 - Atributos Dinâmicos
+- [ ]  Aula 11 - Métodos
+- [ ]  Aula 12 - CSS Scoped e CSS Global
+- [ ]  Aula 13 - Renderização de listas ( v-for)
+- [ ]  Aula 14 - Eventos ( _@submit e _@click)
+- [ ]  Aula 15 - Múltiplos Eventos
+- [ ]  Aula 16 - Reutilização de Componentes
+- [ ]  Aula 17 - Utilizando props
+- [ ]  Aula 18 - Emit
+- [ ]  Aula 19 - Criando o projeto do curso
+- [ ]  Aula 20 - Criando uma API com JSON server
+- [ ]  Aula 21 - Implementando o Vue Router
+- [ ]  Aula 22 - Finalizando cabeçalho e rodapé do projeto
+- [ ]  Aula 23 - Criando Banner da aplicação
+- [ ]  Aula 24 - Criando Formulário de cadastro
+- [ ]  Aula 25 - Resgatando dados do banco e inserindo no formulário
+- [ ]  Aula 26 - Inserindo dados no banco
+- [ ]  Aula 27 - Criando componentes de mensagens do sistema
+- [ ]  Aula 28 - Criando a tela de pedidos ( Dashboard )
+- [ ]  Aula 29 - Resgatando pedidos do banco
+- [ ]  Aula 30 - Recebendo os status dos Pedidos
+- [ ]  Aula 31 - Removendo pedidos do sistema
+- [ ]  Aula 32 - Atualização de Pedidos
+- [ ]  Aula 33 - Mensagens nas atualizações
+- [ ]  Aula 34 - #Conclusão do Curso!
 
 
 ## Aula 05
