@@ -113,7 +113,7 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 
 
 
-### [x] Aula 01 - Introdução
+- [x] Aula 01 - Introdução
 
 <h2>O que é Vue</h2>
 
