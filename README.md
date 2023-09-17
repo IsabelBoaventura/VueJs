@@ -113,7 +113,21 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 
 
 
-- [ ]  Aula 01 - Introdução
+### [ ] Aula 01 - Introdução
+
+<h2>O que é Vue</h2>
+* Framework progressivo para criar interfaces;
+* Construção de layouts baseada em componentes;
+* Baixa curva de aprendizado ( parece com o Python);
+* Framework front-end mais utilizado;
+* Com módulos para manipulação de rotas ( Vue Router) e Status ( Vuex);
+
+<h2>Pré-requisitos</h2> 
+
+* Conhecimento intermediário de HTML, CSS e Javascript; 
+* Recursos do javascript na versão ES6 ( map, filter, reduce,  ... );
+
+	
 - [ ]  Aula 02 - Como Instalar o Vue
 - [ ]  Aula 03 - Inputs e Data Binding
 - [ ]  Aula 04 - Utilizando o Vue CLI
