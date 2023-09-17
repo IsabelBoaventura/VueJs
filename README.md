@@ -234,7 +234,7 @@ Criando um novo componente:
 
 - :open_file_folder: src
 	- :open_file_folder: components
-		- :pincel: LifeCycle.vue
+		-  :pencil:  LifeCycle.vue
 		
 
 Criaremos o componente, com as informações básicas para teste, e depois importaremos na aplicação, e adicionaremos na área básica dos componentes. 
@@ -246,10 +246,6 @@ Apenas trocando o nome,  parece sem propósito, mas assim que tiver em produçã
 Ou seja: Eventos acontecendo em determinada etapa da aplicação.  
 
 Uma das etapas mais usada é no carregamentos das informações do banco.
-
-Neste componente 
-
-
 
 
 
