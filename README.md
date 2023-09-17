@@ -1,5 +1,6 @@
 # VueJs
 
+Projeto em Vue.js um site de solicitação de lanche. 
 
 ##  :walking: Caminho
 
@@ -129,9 +130,24 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 * Recursos do javascript na versão ES6 ( map, filter, reduce,  ... );
 
 	
-- [ ]  Aula 02 - Como Instalar o Vue
-- [ ]  Aula 03 - Inputs e Data Binding
+- [x]  Aula 02 - Como Instalar o Vue
+
+<h4>Pré-requisitos</h4>
+
+* Utilizando CDN;
+* Utilizando CLI;
+
+- [x]  Aula 03 - Inputs e Data Binding
+
+* Data Binding: mudar em tempo real um dado que está sendo inserido em um input;
+* Vários outros frameworks também tem esta funcionalidade: React, Angular, ... ;
+
+
+
 - [ ]  Aula 04 - Utilizando o Vue CLI
+
+* CLI é ferramenta de linha de comando do Vue;
+* Possibilita criar e configurar projetos de forma avançada;
 - [ ]  Aula 05 - Criando Componentes
 - [ ]  Aula 06 - Dados em Componentes (data)
 - [ ]  Aula 07 - Entendendo os Lifecycle Hooks ( ciclo de vida )
