@@ -1,34 +1,40 @@
 # VueJs
 
 
-## Caminho
-    * Tutorial:
+##  :walking: Caminho
+
+> Tutorial:
 		https://www.youtube.com/playlist?list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL
 		
-    * Vuejs: 
+> Vuejs: 
 		https://vuejs.org/guide/quick-start.html#using-vue-from-cdn
 	
  
-    * CDN 
+> CDN 
 		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-Instalar o VueJs via CLI
-	* Documentação: https://br.vuejs.org/v2/guide/installation#NPM
-	
-	* Comando: npm install -g @vue/cli ( Não funcionou);
-	* Na documentação do vue: npm install vue ( funcionou );
-	
-	
-	
-## Programas
+## :wrench: Instalar o VueJs via CLI
 
-	* node: v18.16.0
-	* npm: 9.6.6
-	* vue: vue/cli 5.0.8
-	* Vetur (extensão do vscode );
+> Documentação:
+	https://br.vuejs.org/v2/guide/installation#NPM
+	
+> Comando:
+	npm install -g @vue/cli ( Não funcionou);
+
+> Na documentação do vue:
+	npm install vue ( funcionou );
+	
+	
+	
+## :cd: Programas
+
+* node: v18.16.0
+* npm: 9.6.6
+* vue: vue/cli 5.0.8
+* Vetur (extensão do vscode );
  
 
-## Arquivos
+## 📚 Arquivos
 
 ## Dicas
 
@@ -45,36 +51,52 @@ Para trabalhar com as comandos de linha de texto no VS Code, troque o terminal d
 ## Projeto
 
 ### Criando um projeto com vue/cli
+
 Dentro do repositório  , pelo terminal, linha de comando de como criar o projeto :
 
-	vue create 2_projeto_vue 
+ <code>	vue create 2_projeto_vue </code>
 	
- -> Selecionar Manualmente
+ #### Selecionar Manualmente
+   
  Marque:
-	-> Choose Vue version
-	-> Babel
-	-> Router
+
+- [x] Choose Vue version
+- [x] Babel
+- [x] Router
+  
+   
 Qual versão:
-	-> 3x
+
+- [x] 3x
+  
 Qual o arquivo das configurações:
-	-> Arquivos indicados
+
+- [x] Arquivos indicados
+  
 Salvar para futuros Projetos:
-	-> N
+
+- [x] N
 
 	
 	
 ### Projeto Criado
 
 Com o projeto criado, podemos ver que já tem algumas diferenças. 
+
 Por exemplo: 
-	o arquivo principal do video é *main.js* e o meu é *main.ts*;
-	Indicação de que o video irá usar js ( javascript) e eu ( posso usar, não quer dizer que irei usar )Typescript;
+
+
+o arquivo principal do video é **main.js** e o meu é **main.ts**;
+
+Indicação de que o video irá usar js ( javascript) e eu ( posso usar, não quer dizer que irei usar )Typescript;
 	
 ### Executando
 
-Para executar o programa e ver o que esta sendo criado, usamos o comando: 
+Para executar o programa e ver o que esta sendo criado, usamos o comando:
 
-	npm run serve 
+<code> npm run serve  </code>
+
+	
 	
 Isto irá fazer o sistema rodar, localhost, na porta 8080. 
 
@@ -82,7 +104,8 @@ Isto irá fazer o sistema rodar, localhost, na porta 8080.
 
 Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no comando de executar: 
 
-	npm run serve 
+<code> npm run serve  </code>
+
 	
 (repetindo a mesma informação para recordar )
 
@@ -103,11 +126,13 @@ App.vue é a página inicial do código, será nele que teremos o que será exib
 
 Este arquivo só irá funcionar, depois que contarmos para a aplicacao que este template é o principal da aplicação, fazemos isto chamadno o script e anunciando: 
 
-	<script>
+<code> <script>
 		export default {
 		   name: 'App'
 		}
-	</script>
+	</script> </code>
+
+	
 
 Entretanto na minha aplicação ainda há erros,  na aula não. 
 
