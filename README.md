@@ -113,9 +113,10 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 
 
 
-### [ ] Aula 01 - Introdução
+### [x] Aula 01 - Introdução
 
 <h2>O que é Vue</h2>
+
 * Framework progressivo para criar interfaces;
 * Construção de layouts baseada em componentes;
 * Baixa curva de aprendizado ( parece com o Python);
