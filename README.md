@@ -160,7 +160,7 @@ Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no c
 * Possibilita criar e configurar projetos de forma avançada;
 
 
-- [x]  Aula 05 - Criando Componentes
+- [x]  Aula 05 - **Criando Componentes**
 
 * Componentes permitem dividir nosso layout em partes;
 * Cada componente tem a sua responsabilidade;
@@ -203,7 +203,7 @@ Acrescentamos o componente, agora ele esta pronto para ser usado;
 <img src="/imgs/primeiraPaginaVue.jpg" />
 
 
-- [x]  Aula 06 - Dados em Componentes (data)
+- [x]  Aula 06 - **Dados em Componentes (data)**
 
 * Componentes podem conter dados;
 * Os dados dos componentes podem ser inicializados com algum valor e podem ser modificados dura a execução do programa;
@@ -223,7 +223,7 @@ Mesmo a aplicação usando componentes, ela mesma pode usar o `data` para ter al
 Até agora o que mais me chama a atenção no Vue.js é a modificação no código e em menos de 2 segundos modificação na página também. Sem precisar adicionar o modemon  ou outro. 
 
 
-- [x]  Aula 07 - Entendendo os Life Cycle Hooks ( ciclo de vida )
+- [x]  Aula 07 - **Entendendo os Life Cycle Hooks ( ciclo de vida )**
 
 * Os Life Cycle Hooks são eventos que podem ser ativados em determinadas partes da execução do programa;
 * Executa o Código no momento que o componente é criado;
@@ -248,11 +248,44 @@ Ou seja: Eventos acontecendo em determinada etapa da aplicação.
 Uma das etapas mais usada é no carregamentos das informações do banco.
 
 
+- [ ]  Aula 08 - **Hierarquia de Componentes**
+
+* Componentes podem ter outros componentes que dependem deles. Isto é chamado de árvore de componente. 
+
+* Além de dividir os componentes em subcomponentes dividimos também as responsabilidades; 
+
+Não sei se os formulários com partes salvas em separado podia ser esta parte de Hierarquia de Componentes; 
+
+Criamos o componente 'Pessoa';
+Criamos o componente 'Info';
+
+Importamos no componente Pessoa o componente Info;
+Importamos no compomente App o componente Pessoa;
+
+Com isto criamos uma árvore de componentes. Uma hierarquia. 
+
+<img src="/imgs/hierarquia.jpg" />
+
+Criamos o componente 'Form';
+
+Criamos a pasta 'Form';
+
+Dentro da pasta 'Form', iremos criar cada um dos componentes de um formulário: inputs de texto, email, submit, ... 
+
+Chamamos dentro do componente 'Form' os componentes que estão dentro da pasta 'form';
 
 
 
 
-- [ ]  Aula 08 - Hierarquia de Componentes
+
+
+
+
+
+
+
+
+
 - [ ]  Aula 09 - Conhecendo as diretivas ( v-if, v-show, v-for )
 - [ ]  Aula 10 - Atributos Dinâmicos
 - [ ]  Aula 11 - Métodos
@@ -281,7 +314,44 @@ Uma das etapas mais usada é no carregamentos das informações do banco.
 - [ ]  Aula 34 - #Conclusão do Curso!
 
 
-## Próxima
+
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
+
+## Dúvidas
+
+1. Como adicionar o bootstrap ou qualquer outra fonte de css 
+
+	Colocar em um projeto em separado para testar
+
+	https://www.devmedia.com.br/estilizando-uma-aplicacao-vue-js-com-bootstrap/42977
+	
+	
+	[terminal]
+		npm install bootstrap-vue bootstrap
+		
+		
+		
+		novo 
+		npm install vue bootstrap bootstrap-vue
+
+		
+		
+		npm i bootstrap@5.3.2
 
 	
 	
