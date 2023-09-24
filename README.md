@@ -63,6 +63,8 @@ Para trabalhar com as comandos de linha de texto no VS Code, troque o terminal d
 Dentro do repositório  , pelo terminal, linha de comando de como criar o projeto :
 
  <code>	vue create 2_projeto_vue </code>
+ 
+(Quando eu estava refazendo o vue, estes comandos não funcionaram no terminal do  VS Code, mas funcionaram no terminal do cmd. )
 	
 #### Selecionar Manualmente
    
@@ -248,7 +250,7 @@ Ou seja: Eventos acontecendo em determinada etapa da aplicação.
 Uma das etapas mais usada é no carregamentos das informações do banco.
 
 
-- [ ]  Aula 08 - **Hierarquia de Componentes**
+- [x]  Aula 08 - **Hierarquia de Componentes**
 
 * Componentes podem ter outros componentes que dependem deles. Isto é chamado de árvore de componente. 
 
@@ -275,18 +277,26 @@ Dentro da pasta 'Form', iremos criar cada um dos componentes de um formulário: 
 Chamamos dentro do componente 'Form' os componentes que estão dentro da pasta 'form';
 
 
+- [x]  Aula 09 - **Diretivas**
+
+### Conhecendo as diretivas ( v-if, v-show, v-for )
+
+* Muitas diretivas em vue;
+* Pode mudar a exibição de uma parte do layout, baseada em condições;
+* As diretivas são essenciais para uma aplicação dinâmica;
+* Pode-se mudar a lógica pelos valores inseridos em `data`;
+
+
+Diretivas: v-if;  v-else ( acompanha o v-if); v-show [escolhe se mostra ou não uma informação; v-for [para apresentação de arrays].
+
+v-else: nunca irá existir sozinho, e sempre terá de estar embaixo do if.
+
+
+v-show: apenas irá mostrar se for verdadeiro.
 
 
 
 
-
-
-
-
-
-
-
-- [ ]  Aula 09 - Conhecendo as diretivas ( v-if, v-show, v-for )
 - [ ]  Aula 10 - Atributos Dinâmicos
 - [ ]  Aula 11 - Métodos
 - [ ]  Aula 12 - CSS Scoped e CSS Global
@@ -315,21 +325,6 @@ Chamamos dentro do componente 'Form' os componentes que estão dentro da pasta '
 
 
 
-<details>
-
-<summary>Tips for collapsed sections</summary>
-
-### You can add a header
-
-You can add text within a collapsed section. 
-
-You can add an image or a code block, too.
-
-```ruby
-   puts "Hello World"
-```
-
-</details>
 
 
 ## Dúvidas
