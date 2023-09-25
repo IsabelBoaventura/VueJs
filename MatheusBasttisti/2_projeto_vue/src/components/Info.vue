@@ -12,19 +12,28 @@
         </ul>
         <p v-if="4>2">Testando para ver se aparece </p>
         <p v-show="mostrar_email" >Mande uma mensagem  para: {{ email }} </p>
+        <p>Para acessar minha página do GitHub <a v-bind:href="meu_link" target="_blank"> basta clicar aqui</a>. </p>
+
+
+        <Picture />
     </div>
 
     
 </template>
 
 <script lang="ts" >
+    import Picture from './Picture.vue'
     export default {
         name: 'Info',
+        components: {
+            Picture
+        },
         data() {
             return{
                 esta_trabalhando: false, 
                 mostrar_email: false,
-                email: "teste_email@email.com"
+                email: "teste_email@email.com",
+                meu_link: "https://github.com/IsabelBoaventura"
 
             }
         }

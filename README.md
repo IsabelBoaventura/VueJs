@@ -295,10 +295,36 @@ v-else: nunca irá existir sozinho, e sempre terá de estar embaixo do if.
 v-show: apenas irá mostrar se for verdadeiro.
 
 
+- [x]  Aula 10 - Atributos Dinâmicos
+
+#### Argumentos
+
+* Argumentos são valores dinâmicos que podem  ser inseridos em "Diretivas"  ou "Atributos";
+
+* Diretivas: basea-se em argumentos para executar determinados comportamentos;
+
+* Atributos: basea-se em argumentos para mudar URL de links ou src de imagens;
+
+* Essenciais para alterar a experiência do usuário no udo da aplicação; 
+
+Exemplo: a imagem de cada usuário; 
+
+"v-bind" pode ser representado tanto por `v-bind` (sintaxe completa) como  apenas por `:` (sintaxe resumida);
 
 
-- [ ]  Aula 10 - Atributos Dinâmicos
+
+
+
+
+
+
+
 - [ ]  Aula 11 - Métodos
+
+* 
+
+
+
 - [ ]  Aula 12 - CSS Scoped e CSS Global
 - [ ]  Aula 13 - Renderização de listas ( v-for)
 - [ ]  Aula 14 - Eventos ( _@submit e _@click)
