@@ -312,7 +312,7 @@ Exemplo: a imagem de cada usuário;
 "v-bind" pode ser representado tanto por `v-bind` (sintaxe completa) como  apenas por `:` (sintaxe resumida);
 
 
-- [ ]  Aula 11 - Métodos
+- [x]  Aula 11 - Métodos
 
 * Métodos no Vue são semelhantes a funções;
 * Podem ser executados baseados em eventos ou por Lógica da Aplicação ; 
@@ -333,6 +333,10 @@ Só funciona quando retira a `lang="ts"` de dentro da tag script;
 
 
 - [ ]  Aula 12 - CSS Scoped e CSS Global
+
+* CSS pode ser ```Global``` ou  ```Scoped``` sendo que global, se define na página principal (app.js) e é aplicado a todos os elementos. e SCOPED é definido em cada elemento, cada elemento pode ser esttilizado, deixando mais fácil de personalizar os elementos; 
+
+
 - [ ]  Aula 13 - Renderização de listas ( v-for)
 - [ ]  Aula 14 - Eventos ( _@submit e _@click)
 - [ ]  Aula 15 - Múltiplos Eventos
