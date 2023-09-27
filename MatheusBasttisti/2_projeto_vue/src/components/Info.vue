@@ -11,7 +11,12 @@
             <li>PHP</li>
         </ul>
         <p v-if="4>2">Testando para ver se aparece </p>
-        <p v-show="mostrar_email" >Mande uma mensagem  para: {{ email }} </p>
+        <div>
+            <button @click="showEmail" >{{ textoBotao }}</button>
+            <p v-show="mostrar_email" >Mande uma mensagem  para: {{ email }} </p>
+        </div>
+        
+        
         <p>Para acessar minha página do GitHub <a v-bind:href="meu_link" target="_blank"> basta clicar aqui</a>. </p>
 
 
@@ -21,19 +26,38 @@
     
 </template>
 
-<script lang="ts" >
+<script  >
     import Picture from './Picture.vue'
+
+  
     export default {
         name: 'Info',
         components: {
             Picture
         },
+        
         data() {
             return{
                 esta_trabalhando: false, 
-                mostrar_email: false,
+                mostrar_email: false ,
                 email: "teste_email@email.com",
-                meu_link: "https://github.com/IsabelBoaventura"
+                meu_link: "https://github.com/IsabelBoaventura",
+                textoBotao: "Mostrar e-mail"
+
+            }
+        },
+        methods:{
+            showEmail(){
+                             
+                this.mostrar_email = !this.mostrar_email 
+                if(!this.mostrar_email){
+                    this.textoBotao =  " Mostrar e-mail"
+                }else{
+                    this.textoBotao =  "Esconder  e-mail"
+                }
+                
+               
+               
 
             }
         }

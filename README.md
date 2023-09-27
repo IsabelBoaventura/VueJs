@@ -312,16 +312,23 @@ Exemplo: a imagem de cada usuário;
 "v-bind" pode ser representado tanto por `v-bind` (sintaxe completa) como  apenas por `:` (sintaxe resumida);
 
 
-
-
-
-
-
-
-
 - [ ]  Aula 11 - Métodos
 
-* 
+* Métodos no Vue são semelhantes a funções;
+* Podem ser executados baseados em eventos ou por Lógica da Aplicação ; 
+* Ficam em um objeto chamado methods;
+* É onde se cria as funções que depois são executadas; 
+
+Agora será criado um botão para ativar ou desativar a mensagem onde aparece o e-amil; 
+
+Diretiva: `@click` equivalente ao chamado da função onclick do javascript;
+
+Criado a chamado de evento `@click` e a criação do método `methods` .
+
+No nosso caso, 'methods', deve vir depois de 'data', pois a nossa "função" showEmail, irá usar declarações existentes no data.
+
+Só funciona quando retira a `lang="ts"` de dentro da tag script; 
+
 
 
 
