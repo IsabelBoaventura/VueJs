@@ -337,6 +337,15 @@ Só funciona quando retira a `lang="ts"` de dentro da tag script;
 * CSS pode ser ```Global``` ou  ```Scoped``` sendo que global, se define na página principal (app.js) e é aplicado a todos os elementos. e SCOPED é definido em cada elemento, cada elemento pode ser esttilizado, deixando mais fácil de personalizar os elementos; 
 
 
+
+<details>
+
+<summary>[ ]  Aula 12 - CSS Scoped e CSS Global</summary>
+
+* CSS pode ser ```Global``` ou  ```Scoped``` sendo que global, se define na página principal (app.js) e é aplicado a todos os elementos. e SCOPED é definido em cada elemento, cada elemento pode ser esttilizado, deixando mais fácil de personalizar os elementos; 
+
+</details>
+
 - [ ]  Aula 13 - Renderização de listas ( v-for)
 - [ ]  Aula 14 - Eventos ( _@submit e _@click)
 - [ ]  Aula 15 - Múltiplos Eventos
