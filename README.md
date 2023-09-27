@@ -332,7 +332,7 @@ Só funciona quando retira a `lang="ts"` de dentro da tag script;
 
 
 
-- [ ]  Aula 12 - CSS Scoped e CSS Global
+- [x]  Aula 12 - CSS Scoped e CSS Global
 
 * CSS pode ser ```Global``` ou  ```Scoped``` sendo que global, se define na página principal (app.js) e é aplicado a todos os elementos. e SCOPED é definido em cada elemento, cada elemento pode ser esttilizado, deixando mais fácil de personalizar os elementos; 
 
@@ -340,7 +340,7 @@ Só funciona quando retira a `lang="ts"` de dentro da tag script;
 
 <details>
 
-<summary>[ ]  Aula 12 - CSS Scoped e CSS Global</summary>
+<summary>[x]  Aula 12 - CSS Scoped e CSS Global</summary>
 
 * CSS pode ser ```Global``` ou  ```Scoped``` sendo que global, se define na página principal (app.js) e é aplicado a todos os elementos. e SCOPED é definido em cada elemento, cada elemento pode ser esttilizado, deixando mais fácil de personalizar os elementos; 
 
