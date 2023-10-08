@@ -2,6 +2,7 @@
     <div >
         <!-- <h1>Olá mundo!</h1> -->
         <!-- usar os componentes -->
+        <Header />
         <PrimeiroComponente />
         <p>Informação de componente interno: {{ testeAqui }}</p>
         <LifeCycle />
@@ -16,6 +17,7 @@
 import PrimeiroComponente from './components/PrimeiroComponente.vue'
 import LifeCycle from './components/LifeCycle.vue'
 import Pessoa from './components/Pessoa.vue'
+import Header from './components/Header.vue'
 
 
 //teste para adicionar o bootstrap
@@ -35,7 +37,8 @@ export default {
         
         PrimeiroComponente,
         LifeCycle, 
-        Pessoa
+        Pessoa,
+        Header
     }, 
     data(){
         return {
@@ -44,3 +47,13 @@ export default {
     }
 }
 </script>
+
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    a{
+        color: red;
+    }
+</style>
