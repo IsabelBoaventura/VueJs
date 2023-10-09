@@ -350,12 +350,67 @@ Agora criando um estilo de "Scoped". Criamos uma página nova: "Header.vue"  e n
 
 E iremos criar os estilos que serão apresentados apenas para esta página.
 
+Estilos criados e apresentados apenas no Header,  mesmo quando o Header faz parte da página do app.js. 
+
+
+- [x]  Aula 13 - Renderização de listas ( v-for)
+
+* As listas (arrays) serão renderizadas por "diretivas" ;
+* A diretiva das arrays geralmente será a "v-for";
+* Geralmente os dados virão da "data", e já virão como uma array;
+* Cada item poderá ser impresso junto com o HTML.
+
+Com esta diretiva, se retira a necessidade anterior de abrir o php escrever o codigo, fechar o php e depois continuar a escrever o HTML ( como se faz no php com html puro);
+
+Vamos voltar a usar a página "info.vue";
+
+Na "data" iremos acrescentar um novo atributo: "backend_technologies";
+Este atributo será uma array, portanto será apresentado assim: 
+
+	<code>
+		backend_technologies: ["", "", "", ... ]
+	</code>
+	
+Caso seja usada na chamada do UL o atributo do ``v-for`` , todos os elementos serão apresentados em um UL diferente, portanto se tiver 5 ou 50 elementos, cada um deles será de uma lista. 
+
+Assim o recomentado é que a chamada seja realizada no elemento que irá se repetir, neste caso  o `LI`;
+
+	<code>
+		<ul >
+            <li v-for="(technology, index) in backend_technologies" v-bind:key="index" > {{ technology }}</li>
+        </ul>
+	</code>
+	
+Isto é para casos onde trabalhamos com arrays. Mas podemos também trabalhar com objetos.
+
+Os objetos são recebidos assim:
+
+	<code>
+		frontend_technologies: [
+			{id:1, language: "HTML"}, 
+			{id:2, language: "CSS"}, 
+			{id:3, language: "Vue.js"},  ... ]
+	</code>
+	
+Na apresentação das informações será semelhante, apenas não precisando mais adicionar um indice para o objeto, pois ele já tem ( id ). 
+
+Evitando apresentar erro em tela,  pois a apresentação de arrays e Objetos exige um índice, que deve ser apresentado  com o **v-bind** key;
+
+	<code>
+		<ul >
+            <li v-for="technology in frontend_technologies" :key="technology.id" > {{ technology.language}}</li>
+        </ul>
+	</code>
 
 
 
 
 
-- [ ]  Aula 13 - Renderização de listas ( v-for)
+
+
+
+
+
 - [ ]  Aula 14 - Eventos ( _@submit e _@click)
 - [ ]  Aula 15 - Múltiplos Eventos
 - [ ]  Aula 16 - Reutilização de Componentes
