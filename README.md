@@ -402,6 +402,30 @@ Evitando apresentar erro em tela,  pois a apresentação de arrays e Objetos exi
         </ul>
 	</code>
 
+- [x]  Aula 14 - Eventos ( _@submit e _@click)
+
+* Eventos são utilizados para complementar ações dos usuários com ativações de Métodos. (Chamadas de funções no javascript);
+* No Vue para apresentar um evento usamos o "@", por exemplo: **@click**;
+* Serão adicionados diretamente a elementos do HTML;
+* O Evento recebe um "parâmetro" que é o método que será executado; 
+
+No nosso exemplo já foi usado na parte de mostrar e esconder o E-mail do Usuário;
+
+Envios de formulários são onde mais comumente usamos estes eventos. ( Form.vue)
+
+	<code>
+		<form action="" @submit="enviarFormulario">
+	</code>
+
+Desta forma no formulario criamos o evento para submeter.
+
+Agora temos de criar o método "enviarFormulario" que estará dentro do "export", depois do "name" e "components".
+
+Se no formulario já houver um "method" ( como no meu caso havia), neste momento do teste irá apresentar erro. ( retirado). 
+
+Após clicar em 'Enviar' o sistema continua na mesma tela, e no console aparece a mensagem selecionada para constar nele.
+
+No exemplo dele, após submeter, voltou a ficar vazio os campos, sem ter adicionado nenhuma limpeza, no meu exemplo o mesmo não ocorreu.
 
 
 
@@ -411,7 +435,13 @@ Evitando apresentar erro em tela,  pois a apresentação de arrays e Objetos exi
 
 
 
-- [ ]  Aula 14 - Eventos ( _@submit e _@click)
+
+
+
+
+
+
+
 - [ ]  Aula 15 - Múltiplos Eventos
 - [ ]  Aula 16 - Reutilização de Componentes
 - [ ]  Aula 17 - Utilizando props
