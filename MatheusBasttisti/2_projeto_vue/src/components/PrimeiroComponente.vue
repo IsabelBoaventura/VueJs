@@ -5,13 +5,18 @@
         <h2>Dados:</h2>
         <p>O nome que consta no componente: {{  nome }}</p>
         <p>A idade que consta no componente: {{ idade }}</p>
+        <MultiplosEventos />
 
     </div>    
 </template>
 
 <script>
+    import MultiplosEventos from './MultiplosEventos.vue';
     export default {
-        name: 'PrimeiroComponente', 
+        name: 'PrimeiroComponente',
+        components:{
+            MultiplosEventos
+        }, 
         data(){
             return {
                 nome: "Isabel",

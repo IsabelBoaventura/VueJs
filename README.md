@@ -428,22 +428,41 @@ Após clicar em 'Enviar' o sistema continua na mesma tela, e no console aparece 
 No exemplo dele, após submeter, voltou a ficar vazio os campos, sem ter adicionado nenhuma limpeza, no meu exemplo o mesmo não ocorreu.
 
 
+- [x]  Aula 15 - Múltiplos Eventos
+
+* O vue permite  a entrada de Múltiplos Eventos em um único evento; ( chamada de várias funções ao clicar em um botao apenas ???? )
+* Sintaxe permanece a mesma;
+* Eventos separados por vírgula;
+* Execução de dois ou mais métodos com um click;
+
+Evento: ação que parte do usuário (clique na tela ); 
+
+Os testes serão realizados no "PrimeiroComponente.vue" para melhor visualizar como os multiplos componentes trabalham; 
+
+Cria o novo componente na apresentação;
+Importa o componente no script;
+Cria o "MultiplosEventos.vue", no mesmo caminho;
+Adiciona o componente na Exportação;
+
+Na página nova "MultiplosEventos.vue" criamos a estrutura padrão: template com div, script com export;
+
+Pode se passar a quantidade de parametros desejada. 
+Os atributos não podem ser texto ( strings ), deve ser um argumento que venha de um dado dinâmico. 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-- [ ]  Aula 15 - Múltiplos Eventos
 - [ ]  Aula 16 - Reutilização de Componentes
+
+* Reutilização de componentes é um método bastante comun no Vue;
+* Cada componente independente;
+* Podendo ativar métodos e mudar dados em cada uso;
+* Para ser usado invocamos o metodo após a importação. 
+
+
+
+
+
+
 - [ ]  Aula 17 - Utilizando props
 - [ ]  Aula 18 - Emit
 - [ ]  Aula 19 - Criando o projeto do curso
