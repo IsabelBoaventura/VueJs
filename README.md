@@ -485,7 +485,7 @@ Passar dados de um componente para o outro;
 Neste exemplo iremos utilizar os componentes "info" e "Pessoa".
 No componente "Pessoa" estamos chamando o componente "Info", agora iremos além de chamar passar dados para ele. 
 
-Onde antes declaravamos para apresentar o "Info" apenas assim: <code> <Info /> </code> agora iremos acrescentar o atributo "email", passando a ficar assim: 
+Onde antes declaravamos para apresentar o "Info" apenas assim: <code> ```<Info />``` </code> agora iremos acrescentar o atributo "email", passando a ficar assim: 
 <code> <Info email="email@teste.com" /> </code>
 
 
