@@ -555,21 +555,18 @@ Onde antes declaravamos para apresentar o "Info" apenas assim: <code> ```<Info /
 
 Adicionar linhas de códigos marcando a linguagem 
 
-```var adicionar2 = function(numero) { return numero + 2; }```js
+```var adicionar2 = function(numero) { return numero + 2; } ```javascript
 
 
 
-```<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <h1>Olá Mundo</h1>
-  </div>
-</div>```html
+```<div class="row"> <div class="col-md-6 col-md-offset-3"> <h1>Olá Mundo</h1> </div> </div> ```html
 
 
 ou desta forma:
 
 ~~~php
-Esta é uma linha de código em PHP.
+echo ' olá mundo!';
+//Esta é uma linha de código em PHP.
 ~~~
 
 
