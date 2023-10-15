@@ -411,9 +411,7 @@ Evitando apresentar erro em tela,  pois a apresentação de arrays e Objetos exi
 
 No nosso exemplo já foi usado na parte de mostrar e esconder o E-mail do Usuário;
 
-Envios de formulários são onde mais comumente usamos estes eventos. ( Form.vue)
-
-	```<form action="" @submit="enviarFormulario">```
+Envios de formulários são onde mais comumente usamos estes eventos. ( Form.vue) ```<form action="" @submit="enviarFormulario">```
 	
 
 Desta forma no formulario criamos o evento para submeter.
