@@ -577,3 +577,13 @@ echo ' olá mundo!';
 ~~~
 
 
+~~~javascript
+var adicionar2 = function(numero) { return numero + 2; } 
+//esta é uma linha de codigo em javascript
+
+~~~
+
+
+
+
+
