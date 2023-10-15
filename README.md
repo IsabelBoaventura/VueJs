@@ -376,23 +376,24 @@ Caso seja usada na chamada do UL o atributo do ``v-for`` , todos os elementos se
 
 Assim o recomentado é que a chamada seja realizada no elemento que irá se repetir, neste caso  o `LI`;
 
-	<code>
-		<ul >
-            <li v-for="(technology, index) in backend_technologies" v-bind:key="index" > {{ technology }}</li>
-        </ul>
-	</code>
+~~~vue
+<ul>
+    <li v-for="(technology, index) in backend_technologies" v-bind:key="index" > {{ technology }}</li>
+</ul>
+~~~
 	
 Isto é para casos onde trabalhamos com arrays. Mas podemos também trabalhar com objetos.
 
 Os objetos são recebidos assim:
 
-	<code>
-		frontend_technologies: [
-			{id:1, language: "HTML"}, 
-			{id:2, language: "CSS"}, 
-			{id:3, language: "Vue.js"},  ... ]
-	</code>
+~~~vue
+frontend_technologies: [
+	{id:1, language: "HTML"}, 
+	{id:2, language: "CSS"}, 
+	{id:3, language: "Vue.js"},  ... ]
 	
+~~~
+
 Na apresentação das informações será semelhante, apenas não precisando mais adicionar um indice para o objeto, pois ele já tem ( id ). 
 
 Evitando apresentar erro em tela,  pois a apresentação de arrays e Objetos exige um índice, que deve ser apresentado  com o **v-bind** key;
@@ -488,7 +489,7 @@ Neste exemplo iremos utilizar os componentes "info" e "Pessoa".
 No componente "Pessoa" estamos chamando o componente "Info", agora iremos além de chamar passar dados para ele. 
 
 Onde antes declaravamos para apresentar o "Info" apenas assim: <code> ```<Info />``` </code> agora iremos acrescentar o atributo "email", passando a ficar assim: 
-´``<Info email="email@teste.com" />```
+```<Info email="email@teste.com" />```
 
 
 
