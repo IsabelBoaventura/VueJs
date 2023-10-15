@@ -397,7 +397,7 @@ Na apresentação das informações será semelhante, apenas não precisando mai
 Evitando apresentar erro em tela,  pois a apresentação de arrays e Objetos exige um índice, que deve ser apresentado  com o **v-bind** key;
 
 <code>
-	<ul >
+	<ul>
         <li v-for="technology in frontend_technologies" :key="technology.id" > {{ technology.language}}</li>
     </ul>
 </code>
