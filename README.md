@@ -561,6 +561,13 @@ Adicionar linhas de códigos marcando a linguagem
 
 ```<div class="row"> <div class="col-md-6 col-md-offset-3"> <h1>Olá Mundo</h1> </div> </div> ```html
 
+~~~html
+<div class="row"> <div class="col-md-6 col-md-offset-3"> <h1>Olá Mundo</h1> </div> </div> 
+
+<!-- Estas são linhas de codigo em HTML --> 
+
+~~~
+
 
 ou desta forma:
 
