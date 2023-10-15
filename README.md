@@ -397,9 +397,9 @@ Na apresentação das informações será semelhante, apenas não precisando mai
 Evitando apresentar erro em tela,  pois a apresentação de arrays e Objetos exige um índice, que deve ser apresentado  com o **v-bind** key;
 
 <code>
-		<ul >
-            <li v-for="technology in frontend_technologies" :key="technology.id" > {{ technology.language}}</li>
-        </ul>
+	<ul >
+        <li v-for="technology in frontend_technologies" :key="technology.id" > {{ technology.language}}</li>
+    </ul>
 </code>
 
 - [x]  Aula 14 - Eventos ( _@submit e _@click)
@@ -413,7 +413,7 @@ No nosso exemplo já foi usado na parte de mostrar e esconder o E-mail do Usuár
 
 Envios de formulários são onde mais comumente usamos estes eventos. ( Form.vue)
 
-	```	<form action="" @submit="enviarFormulario"> ```
+	```<form action="" @submit="enviarFormulario">```
 	
 
 Desta forma no formulario criamos o evento para submeter.
