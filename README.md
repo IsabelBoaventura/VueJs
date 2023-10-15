@@ -107,7 +107,7 @@ Indicação de que o video irá usar js ( javascript) e no meu projeto ( posso u
 
 Para executar o programa e ver o que esta sendo criado, usamos o comando:
 
-<code> npm run serve  </code>
+``` npm run serve ```
 
 	
 	
@@ -117,8 +117,7 @@ Isto irá fazer o sistema rodar, localhost, na porta 8080.
 
 Quando fechar o sistema, e / ou precisar reiniciar novamente,  basta clicar no comando de executar: 
 
-<code> npm run serve  </code>
-
+``` npm run serve ```
 	
 (repetindo a mesma informação para recordar )
 
@@ -177,12 +176,15 @@ A tag `template` é a tag que indica que dentro dela haverá informações HTML;
 
 Este arquivo só irá funcionar, depois que contarmos para a aplicacao que este template é o principal da aplicação, fazemos isto chamando o script e anunciando: 
 
-<code><script>
+~~~javascript
+<script>
 	export default {
 		name: 'App'
 	}
 </script> 
-</code>
+
+~~~
+
 
 Entretanto na minha aplicação ainda há erros,  na aula não. 
 
@@ -342,11 +344,14 @@ O estilo adicionado nesta página foi passado para todas as páginas que compõe
 
 Agora criando um estilo de "Scoped". Criamos uma página nova: "Header.vue"  e nela adicionaremos o estilo "style scoped":
 
-<code>
-	<style scoped>
-		ul{ ... }
-	</style>
-</code>
+~~~css
+<style scoped>
+	ul{ ... }
+</style>
+
+~~~
+
+
 
 E iremos criar os estilos que serão apresentados apenas para esta página.
 
@@ -365,11 +370,7 @@ Com esta diretiva, se retira a necessidade anterior de abrir o php escrever o co
 Vamos voltar a usar a página "info.vue";
 
 Na "data" iremos acrescentar um novo atributo: "backend_technologies";
-Este atributo será uma array, portanto será apresentado assim: 
-
-	<code>
-		backend_technologies: ["", "", "", ... ]
-	</code>
+Este atributo será uma array, portanto será apresentado assim:  ``` backend_technologies: ["", "", "", ... ] ```
 	
 Caso seja usada na chamada do UL o atributo do ``v-for`` , todos os elementos serão apresentados em um UL diferente, portanto se tiver 5 ou 50 elementos, cada um deles será de uma lista. 
 
@@ -396,11 +397,15 @@ Na apresentação das informações será semelhante, apenas não precisando mai
 
 Evitando apresentar erro em tela,  pois a apresentação de arrays e Objetos exige um índice, que deve ser apresentado  com o **v-bind** key;
 
-<code>
-	<ul>
-        <li v-for="technology in frontend_technologies" :key="technology.id" > {{ technology.language}}</li>
-    </ul>
-</code>
+
+~~~vue
+<ul>
+    <li v-for="technology in frontend_technologies" :key="technology.id" > {{ technology.language}}</li>
+</ul>
+
+~~~
+
+
 
 - [x]  Aula 14 - Eventos ( _@submit e _@click)
 
@@ -483,7 +488,7 @@ Neste exemplo iremos utilizar os componentes "info" e "Pessoa".
 No componente "Pessoa" estamos chamando o componente "Info", agora iremos além de chamar passar dados para ele. 
 
 Onde antes declaravamos para apresentar o "Info" apenas assim: <code> ```<Info />``` </code> agora iremos acrescentar o atributo "email", passando a ficar assim: 
-<code> <Info email="email@teste.com" /> </code>
+´``<Info email="email@teste.com" />```
 
 
 
@@ -555,14 +560,13 @@ Onde antes declaravamos para apresentar o "Info" apenas assim: <code> ```<Info /
 
 Adicionar linhas de códigos marcando a linguagem 
 
-```var adicionar2 = function(numero) { return numero + 2; } ```javascript
-
-
-
-```<div class="row"> <div class="col-md-6 col-md-offset-3"> <h1>Olá Mundo</h1> </div> </div> ```html
 
 ~~~html
-<div class="row"> <div class="col-md-6 col-md-offset-3"> <h1>Olá Mundo</h1> </div> </div> 
+<div class="row"> 
+	<div class="col-md-6 col-md-offset-3"> 
+		<h1>Olá Mundo</h1> 
+	</div> 
+</div> 
 
 <!-- Estas são linhas de codigo em HTML --> 
 
@@ -578,8 +582,17 @@ echo ' olá mundo!';
 
 
 ~~~javascript
-var adicionar2 = function(numero) { return numero + 2; } 
+var adicionar2 = function(numero) { 
+	return numero + 2; 
+} 
 //esta é uma linha de codigo em javascript
+
+~~~
+
+
+
+~~~javascript
+
 
 ~~~
 
