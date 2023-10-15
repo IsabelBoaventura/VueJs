@@ -458,6 +458,15 @@ Os atributos não podem ser texto ( strings ), deve ser um argumento que venha d
 * Podendo ativar métodos e mudar dados em cada uso;
 * Para ser usado invocamos o metodo após a importação. 
 
+Vamos utilizar o fonte "PrimeiroComponente.vue"  e um fonte novo "Reutilizacao.vue";
+
+Criamos o componente de "Reutilização" e agora importamos ele no componente "Primeiro";
+
+O mesmo componente foi adicionado em várias partes do código ( pensei em um botão salvar), mas como usar este componente, para salvar apenas uma pequena parte do Codigo,  por exemplo: apenas o endereço,  e depois apenas o nome, e assim por diante.
+
+Exemplo comentado no vídeo: adicionar produtos no carrinho; 
+
+
 
 
 
