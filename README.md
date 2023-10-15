@@ -555,9 +555,13 @@ Onde antes declaravamos para apresentar o "Info" apenas assim: <code> ```<Info /
 
 Adicionar linhas de códigos marcando a linguagem 
 
-```var adicionar2 = function(numero) {
+```
+
+var adicionar2 = function(numero) {
   return numero + 2;
-}```js
+}
+
+```js
 
 
 
