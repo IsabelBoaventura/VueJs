@@ -21,7 +21,7 @@
         
        
         <p>Para acessar minha página do GitHub <a v-bind:href="meu_link" target="_blank"> basta clicar aqui</a>. </p>
-
+sdsf
 
         <Picture />
     </div>    

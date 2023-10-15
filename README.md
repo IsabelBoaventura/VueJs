@@ -449,9 +449,7 @@ Na página nova "MultiplosEventos.vue" criamos a estrutura padrão: template com
 Pode se passar a quantidade de parametros desejada. 
 Os atributos não podem ser texto ( strings ), deve ser um argumento que venha de um dado dinâmico. 
 
-
-
-- [ ]  Aula 16 - Reutilização de Componentes
+- [x]  Aula 16 - Reutilização de Componentes
 
 * Reutilização de componentes é um método bastante comun no Vue;
 * Cada componente independente;
@@ -466,6 +464,8 @@ O mesmo componente foi adicionado em várias partes do código ( pensei em um bo
 
 Exemplo comentado no vídeo: adicionar produtos no carrinho; 
 
+Podendo usar este mesmo componente, em outros componentes do sistema. Exemplo: Picture, form, ... ;
+
 
 
 
@@ -473,6 +473,29 @@ Exemplo comentado no vídeo: adicionar produtos no carrinho;
 
 
 - [ ]  Aula 17 - Utilizando props
+
+* Passar dados com `props` propriedades;
+* Os componentes do Vue podem receber dados, e este recurso é chamado de ```props```;
+* As props podem ser passadas por valores do data, como também podemos inserir diretamente eles;
+* Precisa ser declarada as propriedades recebidas pelos componentes em uma array ou objeto chamado props;
+
+Passar dados de um componente para o outro;
+**PROPS**  ação de passar dados de um componente pai para um componente filho;
+
+Neste exemplo iremos utilizar os componentes "info" e "Pessoa".
+No componente "Pessoa" estamos chamando o componente "Info", agora iremos além de chamar passar dados para ele. 
+
+Onde antes declaravamos para apresentar o "Info" apenas assim: <code> <Info /> </code> agora iremos acrescentar o atributo "email", passando a ficar assim: 
+<code> <Info email="email@teste.com" /> </code>
+
+
+
+
+
+
+
+
+
 - [ ]  Aula 18 - Emit
 - [ ]  Aula 19 - Criando o projeto do curso
 - [ ]  Aula 20 - Criando uma API com JSON server
@@ -524,6 +547,7 @@ Exemplo comentado no vídeo: adicionar produtos no carrinho;
 <details>
 
 <summary>[]  Aula 12 - CSS Scoped e CSS Global</summary>
+
 ## teste para visualizacao 
 
 * CSS pode ser ```Global``` ou  ```Scoped``` sendo que global, se define na página principal (app.js) e é aplicado a todos os elementos. e SCOPED é definido em cada elemento, cada elemento pode ser esttilizado, deixando mais fácil de personalizar os elementos;

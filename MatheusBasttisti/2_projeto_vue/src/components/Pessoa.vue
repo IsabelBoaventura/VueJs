@@ -2,10 +2,10 @@
     <div style="border: solid 3px blue; border-radius: 3%;">
         <h2>Descricao da pessoa {{ nome }}</h2>
         <Form />
-        <Info />
+        <Info email="email@teste.com" />
     </div>
    
-    
+   
 </template>
 
 <script lang="ts" >
