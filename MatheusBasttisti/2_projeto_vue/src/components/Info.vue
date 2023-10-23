@@ -1,7 +1,8 @@
 <template>
    
     <div style="border: solid 3px red; border-radius: 1%;">
-        <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
+        <p>E-mail recebido via props: {{ email }}</p>
+        <p v-if="esta_trabalhando">  === Aqui eu recebi o segudno  props <br>Estou trabalhando no momento.</p>
         <p v-else>Estou em busca de novos oportunidades! </p>
         <p>Utilizo as seguintes tecnologias para o back-end:</p>   
         <ul >
@@ -27,7 +28,7 @@ sdsf
     </div>    
 </template>
 
-<script  >
+<script>
     import Picture from './Picture.vue'
 
   
@@ -36,12 +37,15 @@ sdsf
         components: {
             Picture
         },
-        
+        props:{
+            email: String,
+            esta_trabalhando: Boolean 
+        },       
         data() {
             return{
-                esta_trabalhando: false, 
+                esta_trabalhando_original: false, 
                 mostrar_email: false ,
-                email: "teste_email@email.com",
+                email_antigo: 'isabela@teste.com',
                 meu_link: "https://github.com/IsabelBoaventura",
                 textoBotao: "Mostrar e-mail",
                 backend_technologies: ["Python", "javascript", "PHP", "Laravel"],
@@ -66,7 +70,8 @@ sdsf
                
 
             }
-        }
+        }, 
+       
         
     }
 </script>

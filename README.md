@@ -485,11 +485,54 @@ Podendo usar este mesmo componente, em outros componentes do sistema. Exemplo: P
 Passar dados de um componente para o outro;
 **PROPS**  ação de passar dados de um componente pai para um componente filho;
 
+Tem de nomear a props;
+
 Neste exemplo iremos utilizar os componentes "info" e "Pessoa".
 No componente "Pessoa" estamos chamando o componente "Info", agora iremos além de chamar passar dados para ele. 
 
-Onde antes declaravamos para apresentar o "Info" apenas assim: <code> ```<Info />``` </code> agora iremos acrescentar o atributo "email", passando a ficar assim: 
-```<Info email="email@teste.com" />```
+Onde antes declaravamos para apresentar o "Info" apenas assim:  ```<Info />```  agora iremos acrescentar o atributo "email", passando a ficar assim: 
+``` <Info compEmail="joaodasNeves@teste.com" />``` o atributo "email" já existia no Fonte info ( pertencendo as informações do data ), não é proibido ter, mas como precisamos distinguir, melhor cada um ter um valor. 
+
+Os "props" também são declarados, assim como os "components", o "name", o "data", ... ;
+
+~~~vue
+props:{
+    compEmail: String
+    }
+
+~~~
+
+O fato do "String" estar em letras minusculas, fez com que a minha página parece de ser apresentado, portanto VueJs é casesensitive, pelo menos nos nomes dos arquivos ;
+
+Agora fazendo que  o valor da variavel antigada de email, receba o novo e-mail via props. Ou seja, o e-amil de data, receberá o e-mail do props. MAS não o de "data()" onde será apresentado, mas o data da página onde se esta criando o props. 
+
+
+Agora a página (Pessoa) onde apresentava um e-amil que constava em seu "data()" irá apresentar o e-mail que vem do props da "Info". 
+
+
+As props podem ser passadas via arrays; 
+Utilizando o "Header.vue" para o exemplo que passa a array;
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -559,6 +602,8 @@ Onde antes declaravamos para apresentar o "Info" apenas assim: <code> ```<Info /
 
 </details>
 
+
+
 Adicionar linhas de códigos marcando a linguagem 
 
 
@@ -596,6 +641,10 @@ var adicionar2 = function(numero) {
 
 
 ~~~
+
+
+
+A empresa Amelia Terezinha Moura Boaventura de CNPJ 49.573.230/0001-39, fundada em 13/02/2023, está com a situação cadastral ATIVA na Receita Federal. Essa empresa é uma MATRIZ do tipo Empresário (Individual), de porte "MEI" que está localizada em Porto Alegre - RS. 
 
 
 

@@ -2,7 +2,7 @@
     <div >
         <!-- <h1>Olá mundo!</h1> -->
         <!-- usar os componentes -->
-        <Header />
+        <Header :esta_logado="true" />
         <PrimeiroComponente />
         <p>Informação de componente interno: {{ testeAqui }}</p>
         <LifeCycle />

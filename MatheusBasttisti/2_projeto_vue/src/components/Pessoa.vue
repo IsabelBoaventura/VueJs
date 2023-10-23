@@ -2,9 +2,8 @@
     <div style="border: solid 3px blue; border-radius: 3%;">
         <h2>Descricao da pessoa {{ nome }}</h2>
         <Form />
-        <Info email="email@teste.com" />
+        <Info :email= "email" :esta_trabalhando=false  />
     </div>
-   
    
 </template>
 
@@ -19,7 +18,9 @@
         },
         data() {
             return{
-                nome: 'Isabel'
+                nome: 'Isabel', 
+                email: "email_props_teste@gmail.com",
+                esta_trabalhando_2: false
 
             }
         }
