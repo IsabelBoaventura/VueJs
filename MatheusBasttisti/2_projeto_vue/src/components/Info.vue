@@ -2,6 +2,7 @@
    
     <div style="border: solid 3px red; border-radius: 1%;">
         <p>E-mail recebido via props: {{ email }}</p>
+        <Picture />
         <p v-if="esta_trabalhando">  === Aqui eu recebi o segudno  props <br>Estou trabalhando no momento.</p>
         <p v-else>Estou em busca de novos oportunidades! </p>
         <p>Utilizo as seguintes tecnologias para o back-end:</p>   
@@ -22,9 +23,9 @@
         
        
         <p>Para acessar minha página do GitHub <a v-bind:href="meu_link" target="_blank"> basta clicar aqui</a>. </p>
-sdsf
 
-        <Picture />
+
+        
     </div>    
 </template>
 

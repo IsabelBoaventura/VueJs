@@ -469,13 +469,7 @@ Exemplo comentado no vídeo: adicionar produtos no carrinho;
 
 Podendo usar este mesmo componente, em outros componentes do sistema. Exemplo: Picture, form, ... ;
 
-
-
-
-
-
-
-- [ ]  Aula 17 - Utilizando props
+- [X]  Aula 17 - Utilizando props
 
 * Passar dados com `props` propriedades;
 * Os componentes do Vue podem receber dados, e este recurso é chamado de ```props```;
@@ -514,35 +508,76 @@ As props podem ser passadas via arrays;
 Utilizando o "Header.vue" para o exemplo que passa a array;
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 - [ ]  Aula 18 - Emit
+
+**Ouvindo evendos com $emit**
+
+* Utilizando o $emit é possivel ouvir um evento de um componente filho em um componente pai;
+* Ativando componentes( como métodos) no componente pai;
+* Evento deve ser registrado no componente;
+* É preciso definir o que será feito com a ativação do evento na chamada do componente; 
+
+Útil para quando não se trabalha com "states"; 
+
+Via $Emit se consegue fazer a comunicação de baixo para cima ( do filho para o pai), via Props é de cima para baixo ( do pai para o filho);
+
+Neste exemplo iremos trabalhar com os componentes: Picture.vue e MudarImagem.vue (Novo criado agora, para este exemplo);
+Será alterada  a imagem do Usuário por meio de um clique;
+
+
+~~~vue
+	<button @click="$emit('nomeEmit')">
+~~~
+
+Para criar o $emit declaramos ele , onde ele será chamado. E delaramos ele na área dos Eventos ( onde se adiciona o "name" , os "methods", as "props" );
+
+
+~~~vue
+	name: 'MudarImagem',
+	emits: ['nomeEmit']
+~~~
+
+
+Isto esta sendo realizado no componente filho, ou seja no "MudarImagem.vue"; 
+
+Volta no componente pai deste componente, neste caso o Picture.vue; 
+
+No componente Pai, iremos informar o que o $emit deve fazer no componente filho, ou seja, qual a ação dele ao clicar no botão. 
+
+No componente pai, para chamar o emit, iremos usar o nome dele, em minusculo e com a separação usando hifen. Por exemplo: o nome do emit é mudarImagem, no pai ele será chamado como: @mudar-imagem;
+
+Código no componente pai ( Picture.vue).
+Código no <template> 
+
+~~~vue
+	<MudarImagem  @nome-emit="acaoDoEmit" />
+~~~
+
+Código no <script>
+~~~vue
+	methods: {
+        acaoDoEmit(){
+            console.log( 'Clicou, vou mudar de imagem  ')
+        }
+    }
+~~~
+
+Com isto conseguimos fazer com que o botão que esta no componente filho, ao ser clicado faça a operação de troca no componente pai. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 - [ ]  Aula 19 - Criando o projeto do curso
 - [ ]  Aula 20 - Criando uma API com JSON server
 - [ ]  Aula 21 - Implementando o Vue Router
