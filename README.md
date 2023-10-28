@@ -586,6 +586,20 @@ Comandos para criar o projeto:
 	
 Rever a criação novamente  e repassar o passo a passo; 
 
+
+O novo projeto criado ficará com este formato de pastas:
+- :open_file_folder: make_your_burger
+	- :open_file_folder: db  (Será criada na próxima aula)
+	- :open_file_folder: node_modulos
+	- :open_file_folder: public
+	- :open_file_folder: src
+		- :open_file_folder: assets
+		- :open_file_folder: components
+		- :open_file_folder: router
+		- :open_file_folder: views
+			-  :pencil:  App.vue (arquivo principal)
+	-  :pencil:  arquivos_do_projeto
+
 - [x]  Aula 20 - Criando uma API com JSON server
 
 Iremos precisar instalar uma nova dependência: "Json". Iremos utilizar para fingir que é uma API, um acesso ao banco de dados. 
@@ -694,7 +708,91 @@ Terminal 01: <code>npm run serve</code>
 Terminal 02: <code>npm run backend</code>
 
 
-- [ ]  Aula 21 - Implementando o Vue Router
+- [x]  Aula 21 - Implementando o Vue Router
+
+Para termos as mesmas imagens do projeto, baixamos do GitHub deste projeto as imagens e o icon. 
+
+No fonte App.vue, iremos limpar o CSS que venho dele,  iremos usar o produzido por nós. 
+
+Eliminaremos o HelloWord.vue;
+
+Para cada página haverá uma view, e cada views terá vários componentes. 
+
+Vamos criar componentes compartilhados,  ou seja, componentes que poderão ser visto em todas as páignas ou em várias páginas.
+
+Componentes compartilhados serão sempre criados na pasta "components"; 
+
+
+- :open_file_folder: src
+	- :open_file_folder: components
+		-  :pencil:  Navbar.vue
+
+
+O estilo destes componentes serão "scoped" ou seja, apenas deles. 
+
+Adicionamos na Navbar o logo da aplicação.
+
+Para adicionar o logo ou qualquer outra página ao componente, iremos usar "router-link" são rotas. 
+
+A imagem do logo será enviada por Props, ou seja , o App.vue que irá mandar qual imagem o Navbar.vue irá apresentar. O pai manda a imagem que o filho deve apresentar. 
+
+
+
+```ROUTER-VIEW``` deve estar instanciado no componente principal para as informações de cada view seja apresentada nas páignas.
+
+
+~~~vue
+	<template>
+		<Navbar />
+		<router-view/>
+	</template>
+~~~
+
+
+Trocamos ( eu prefiro criar novo) o componente About para o componente "Pedidos";
+
+No componente "Navbar" acrescentamos o "router-link" de pedidos: 
+
+~~~vue
+	  <router-link to="/pedidos">Pedidos </router-link>
+~~~
+
+
+Agora que temos esta novo componente, precisamos criar a rota deste novo componente também .
+
+Para criarmos ou alterarmos as rotas devemos ir no arquivo "index.js" que esta dentro da pasta "router".
+
+
+- :open_file_folder: src
+	- :open_file_folder: router
+		-  :pencil:  index.js 
+		
+Neste arquivo iremos criar uma nova rota;
+
+
+~~~vue
+	{
+		path: '/pedidos',
+		name: 'Pedidos',
+		component: () => import(/*   */ '../views/Pedidos.vue')
+  }
+~~~
+
+
+No meu caso agora eu tenho as páginas:  "Home",  "About" e  "Pedidos".
+
+Cada uma delas, com uma informação e cada uma delas com a sua própria rota. 
+
+
+
+
+
+
+
+
+
+			
+
 
 
 
@@ -708,6 +806,23 @@ Terminal 02: <code>npm run backend</code>
 
 
 - [ ]  Aula 22 - Finalizando cabeçalho e rodapé do projeto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - [ ]  Aula 23 - Criando Banner da aplicação
 - [ ]  Aula 24 - Criando Formulário de cadastro
 - [ ]  Aula 25 - Resgatando dados do banco e inserindo no formulário
