@@ -1,8 +1,9 @@
 <template>
-  <div class="home">
+    <div class="main-container">
+  
 
    
-    <h1>This is a HOME page</h1>
+    <h1>Esta é a página "Home"</h1>
  
  
 

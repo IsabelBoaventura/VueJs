@@ -783,31 +783,14 @@ No meu caso agora eu tenho as páginas:  "Home",  "About" e  "Pedidos".
 
 Cada uma delas, com uma informação e cada uma delas com a sua própria rota. 
 
+- [x]  Aula 22 - Finalizando cabeçalho e rodapé do projeto
 
+Vamos estilizar o nosso navbar.
+O Navbar receberá as props: 'logo' e 'alt'; do componente pai (App.vue);
 
+No componente pai, passamos as propriedades pelo Navbar que chamamos na template. E no "data()" informamos quais informações apresentar.
 
-
-
-
-
-
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-- [ ]  Aula 22 - Finalizando cabeçalho e rodapé do projeto
-
-
+Agora arrumar a apresentação ( CSS );
 
 
 
@@ -824,6 +807,23 @@ Cada uma delas, com uma informação e cada uma delas com a sua própria rota.
 
 
 - [ ]  Aula 23 - Criando Banner da aplicação
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - [ ]  Aula 24 - Criando Formulário de cadastro
 - [ ]  Aula 25 - Resgatando dados do banco e inserindo no formulário
 - [ ]  Aula 26 - Inserindo dados no banco

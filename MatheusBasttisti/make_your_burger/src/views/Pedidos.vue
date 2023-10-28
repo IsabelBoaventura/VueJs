@@ -1,6 +1,6 @@
 <template>
-    <div class="pedidos">
-        <h2>Esta é a página de pedidos </h2>
+    <div class="main-container">
+        <h1>Esta é a página de pedidos </h1>
     </div>
 </template>
 
