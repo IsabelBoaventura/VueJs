@@ -803,6 +803,10 @@ Nesta parte concluimos o componente Banner.
 
 - [ ]  Aula 24 - Criando Formulário de cadastro
 
+Agora vamos para o formulário da aplicação. Iremos criar o componente "BurgerForm.vue".
+
+Iremos criar os componentes que irão aparecer na tela, e depois estilizar o seu CSS. 
+
 
 
 
