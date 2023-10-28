@@ -1,6 +1,6 @@
 # VueJs
 
-Projeto em Vue.js um site de solicitação de lanche. 
+Projeto de **FrondEnd** em Vue.js um site de solicitação de lanche. 
 
 ##  :walking: Caminho
 
@@ -689,13 +689,14 @@ D:\documentos\Praticando\VueJs\MatheusBasttisti\make_your_burger>
 
 Estes caminhos serão onde encontraremos as "Tabelas" do backend.
 
-  Resources
-  http://localhost:3000/ingredientes
-  http://localhost:3000/status
-  http://localhost:3000/burgers
+Resources
+  
+- http://localhost:3000/ingredientes
+- http://localhost:3000/status
+- http://localhost:3000/burgers
 
-  Home
-  http://localhost:3000
+Home
+- http://localhost:3000
   
   
   
@@ -705,6 +706,7 @@ Lembrando: o backend irá funcionar independente do FrondEnd, serão em dois ter
 São independentes um do outro.
 
 Terminal 01: <code>npm run serve</code>
+
 Terminal 02: <code>npm run backend</code>
 
 
@@ -754,7 +756,7 @@ Trocamos ( eu prefiro criar novo) o componente About para o componente "Pedidos"
 No componente "Navbar" acrescentamos o "router-link" de pedidos: 
 
 ~~~vue
-	  <router-link to="/pedidos">Pedidos </router-link>
+	  <router-link to="/pedidos"> Pedidos </router-link>
 ~~~
 
 
@@ -771,11 +773,11 @@ Neste arquivo iremos criar uma nova rota;
 
 
 ~~~vue
-	{
-		path: '/pedidos',
-		name: 'Pedidos',
-		component: () => import(/*   */ '../views/Pedidos.vue')
-  }
+{
+	path: '/pedidos',
+	name: 'Pedidos',
+	component: () => import(/* webpackChunkName: "pedidos" */ '../views/Pedidos.vue')
+}
 ~~~
 
 
@@ -792,39 +794,31 @@ No componente pai, passamos as propriedades pelo Navbar que chamamos na template
 
 Agora arrumar a apresentação ( CSS );
 
+- [x]  Aula 23 - Criando Banner da aplicação
 
+No componente "Home" iremos adicionar os componentes "Banner" e "Formulario".
 
-
-
-
-
-
-
-
-
-
-
-
-
-- [ ]  Aula 23 - Criando Banner da aplicação
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Nesta parte concluimos o componente Banner. 
 
 
 - [ ]  Aula 24 - Criando Formulário de cadastro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - [ ]  Aula 25 - Resgatando dados do banco e inserindo no formulário
 - [ ]  Aula 26 - Inserindo dados no banco
 - [ ]  Aula 27 - Criando componentes de mensagens do sistema
