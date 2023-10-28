@@ -46,7 +46,15 @@ Caso a versão que esta instalada no pc agora, não for a mais recente, pode faz
 
 ## Dicas
 
-Para trabalhar com as comandos de linha de texto no VS Code, troque o terminal de 'powershell' para 'bash'. 
+* Para trabalhar com as comandos de linha de texto no VS Code, troque o terminal de 'powershell' para 'bash'.
+
+* Estou preferindo usar o cmd, esta mais prático e rápido. 
+
+* Na linha de comando, para marcar e desmarcar, selecione o espaço do teclado;
+
+* Para verificar a versão do vue.js: vue -V;
+* Para criar novo projeto: vue create . 
+ 
 
 
 
@@ -67,12 +75,15 @@ Dentro do repositório  , pelo terminal, linha de comando de como criar o projet
 (Quando eu estava refazendo o vue, estes comandos não funcionaram no terminal do  VS Code, mas funcionaram no terminal do cmd. )
 	
 #### Selecionar Manualmente
+Manually select features
    
 Marque:
 
 - [x] Choose Vue version
 - [x] Babel
 - [x] Router
+
+Desmarque o Linter / Formatter
   
    
 Qual versão:
@@ -507,10 +518,7 @@ Agora a página (Pessoa) onde apresentava um e-amil que constava em seu "data()"
 As props podem ser passadas via arrays; 
 Utilizando o "Header.vue" para o exemplo que passa a array;
 
-
-
-
-- [ ]  Aula 18 - Emit
+- [x]  Aula 18 - Emit
 
 **Ouvindo evendos com $emit**
 
@@ -566,21 +574,139 @@ Código no <script>
 
 Com isto conseguimos fazer com que o botão que esta no componente filho, ao ser clicado faça a operação de troca no componente pai. 
 
+- [x]  Aula 19 - Criando o projeto do curso
+
+Criar a pasta do projeto ( make_your_burger ). 
+Pelo terminal entre nesta pasta e crie  o projeto.
+
+Comandos para criar o projeto:
+
+	* Entre na pasta do projeto pelo terminal;
+	* 'vue create .' 
+	
+Rever a criação novamente  e repassar o passo a passo; 
+
+- [x]  Aula 20 - Criando uma API com JSON server
+
+Iremos precisar instalar uma nova dependência: "Json". Iremos utilizar para fingir que é uma API, um acesso ao banco de dados. 
+Será onde guardaremos e receberemos as informações. 
+
+Pare o servidor e faça a instalação:
+
+	npm install json-server
+	
+Instalação realizada. 
+O sistema por si só não tem como saber que será apartir do json que teremos as nossas informações,  por isto temos de contar para o sistema. 
+
+Para informar ao sistema, iremos acrescentar um novo script no "Package.json", o nome deste script será "backend", e informaremos qual o seu caminho. 
+
+Ficando desta forma:
+
+<code>
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build", 
+		"backend": "json-server --watch db/db.json"
+    },
+</code>
+
+Ja que indicamos o lugar onde o arquivo estará, agora iremos criar esta estrutura:
+
+- :open_file_folder: db
+	-  :pencil:  db.json 
+	
+Esta pasta será criada na raiz do projeto. 
+Pegamos o arquivo json  do github e adicionamos em nosso código.
+
+Agora vamos para o terminal.
+E inicializamos o backend:
+
+	<code>npm run backend</code>
+	
+Usei o powershell, o bash, e o terminal normal, até que o inicializar do backend fosse aceito.
+
+No terminal CMD, após eu instalar o json server,  rodei o audit:
+	<code>npm audit</code>
+
+Ele parece ter feito uma farredura nos programas instalados,  mas depois disto a função do run backend funcionou.
+
+Caminho que o backend nos passou:
+
+<code>
+
+D:\documentos\Praticando\VueJs\MatheusBasttisti\make_your_burger>npm run backend
+
+> make_your_burger@0.1.0 backend
+> json-server --watch db/db.json
 
 
+  \{^_^}/ hi!
+
+  Loading db/db.json
+  Done
+
+  Resources
+  http://localhost:3000/ingredientes
+  http://localhost:3000/status
+  http://localhost:3000/burgers
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+Some error occurred Error: listen EADDRINUSE: address already in use ::1:3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1937:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+
+D:\documentos\Praticando\VueJs\MatheusBasttisti\make_your_burger>
+
+</code>
 
 
+Estes caminhos serão onde encontraremos as "Tabelas" do backend.
+
+  Resources
+  http://localhost:3000/ingredientes
+  http://localhost:3000/status
+  http://localhost:3000/burgers
+
+  Home
+  http://localhost:3000
+  
+  
+  
+**Resources** são as rotas disponiveis no sistema.
+
+Lembrando: o backend irá funcionar independente do FrondEnd, serão em dois terminais diferentes, duas portas diferentes.
+São independentes um do outro.
+
+Terminal 01: <code>npm run serve</code>
+Terminal 02: <code>npm run backend</code>
 
 
-
-
-
-
-
-
-- [ ]  Aula 19 - Criando o projeto do curso
-- [ ]  Aula 20 - Criando uma API com JSON server
 - [ ]  Aula 21 - Implementando o Vue Router
+
+
+
+
+
+
+
+
+
+
+
+
 - [ ]  Aula 22 - Finalizando cabeçalho e rodapé do projeto
 - [ ]  Aula 23 - Criando Banner da aplicação
 - [ ]  Aula 24 - Criando Formulário de cadastro
