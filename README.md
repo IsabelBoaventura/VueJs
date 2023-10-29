@@ -801,13 +801,52 @@ No componente "Home" iremos adicionar os componentes "Banner" e "Formulario".
 Nesta parte concluimos o componente Banner. 
 
 
-- [ ]  Aula 24 - Criando Formulário de cadastro
+- [x]  Aula 24 - Criando Formulário de cadastro
 
 Agora vamos para o formulário da aplicação. Iremos criar o componente "BurgerForm.vue".
 
 Iremos criar os componentes que irão aparecer na tela, e depois estilizar o seu CSS. 
 
 
+- [x]  Aula 25 - Resgatando dados do banco e inserindo no formulário
+
+Para trabalharmos com os dados do banco, iremos usar o componente "BurgerForm", os dados serão tratados dentro do "data()" deste componente.
+
+Nesta parte iremos fazer uma divição com singular e plural . No plural serão dos dados vindo do servidor ( paes, carnes, opcionaisData ) e no singular serão os dados que cadastramos e mandamos para o servidor ( nome, pao, carne, opcionais[] <-- isto é uma array ).
+
+Vamos criar os métodos ( methods )que irão trazer as informações do backend, e os métodos que irão levar as informações para o backend. 
+
+Nossos métodos serão assincronos ( ```async``` ).
+
+
+**Métodos**:
+
+- **getIngredientes**: traz as informações dos ingredientes do backend;
+
+
+Além de "methods" devemos ter também o "mounted()" basicamente é quem chama as funções.
+
+Depois que recebemos os dados, iremos declarar que os dados que vieram do banco serão passados para os dados que estão no "data()" (aqueles em singular apresentados antes).
+
+Agora temos de substituir na apresentação da tela os dados fixos, pelos dados vindo do "data()". Para isto usaremos do ```v-for```. 
+
+
+~~~vue
+ <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">{{ pao.tipo }}</option> 
+~~~
+
+Para o checkbox, o v-for será adicionado na Div "checkbox-container". 
+
+~~~vue
+<div class="checkbox-container" v-for="opcional in opcionaisData" :key="opcional.id" >
+    <input type="checkbox" name="opcionais" id="opcionais" v-model="opcionais" :value="opcional.tipo">
+    <span>{{ opcional.tipo }}</span>
+</div> 
+
+~~~
+
+
+Assim fazemos o tratamento para aparecer as informações trazidas do banco.
 
 
 
@@ -823,8 +862,27 @@ Iremos criar os componentes que irão aparecer na tela, e depois estilizar o seu
 
 
 
-- [ ]  Aula 25 - Resgatando dados do banco e inserindo no formulário
+
+
+
+
+
+
+
+
+
 - [ ]  Aula 26 - Inserindo dados no banco
+
+
+
+
+
+
+
+
+
+
+
 - [ ]  Aula 27 - Criando componentes de mensagens do sistema
 - [ ]  Aula 28 - Criando a tela de pedidos ( Dashboard )
 - [ ]  Aula 29 - Resgatando pedidos do banco
