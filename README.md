@@ -873,11 +873,70 @@ Assim fazemos o tratamento para aparecer as informações trazidas do banco.
 
 - [ ]  Aula 26 - Inserindo dados no banco
 
+Agora que já buscamos as informações do banco, esta na hora de enviar para  o banco,  para isto teremos um método para o envio.
+
+No 'form' acrescentamos o submit com o nome do método: 
+
+~~~vue
+<form id="burger-form" @submit="createBurger" >
+~~~
+
+E criaremos o método "createBurger", com o default ativo. 
+
+Neste método transformaremos as informações digitadas em uma constante.
+
+~~~vue
+const infoParaBanco = {
+    nome: this.nome,
+    carne: this.carne,
+    pao: this.pao, 
+    opicionais: Array.from(this.opcionais),
+    status: "Solicitado"
+}
+~~~
+
+Transformaremos a constante criada em uma constante JSON. 
+
+~~~vue
+const dataJson = JSON.stringify( infoParaBanco);
+~~~
+
+
+E depois mandaremos esta constante para o servidor com o método "fetch" .
+
+~~~vue
+const req = await fetch("http://localhost:3000/burgers",{
+    method: "POST",
+    headers: { "Content-Type": "application/json" }, 
+    body: dataJson
+});
+			
+~~~
+
+Com esta parte o nosso banco recebeu os dados, lembrando, nehum dado foi tratado para qualquer tipo de erro, foi apenas um recebimento e envio de dados. 
+
+Após o envio dos dados a parte do FrontEnd deve ficar limpa para o recebimento dos próximos dados. 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~~~vue
+~~~
 
 
 
@@ -973,6 +1032,11 @@ var adicionar2 = function(numero) {
 
 
 ~~~
+
+~~~vue
+~~~
+
+
 
 
 
