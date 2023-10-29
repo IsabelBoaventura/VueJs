@@ -841,8 +841,7 @@ Para o checkbox, o v-for será adicionado na Div "checkbox-container".
 <div class="checkbox-container" v-for="opcional in opcionaisData" :key="opcional.id" >
     <input type="checkbox" name="opcionais" id="opcionais" v-model="opcionais" :value="opcional.tipo">
     <span>{{ opcional.tipo }}</span>
-</div> 
-
+</div>
 ~~~
 
 
@@ -850,28 +849,7 @@ Assim fazemos o tratamento para aparecer as informações trazidas do banco.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- [ ]  Aula 26 - Inserindo dados no banco
+- [x]  Aula 26 - Inserindo dados no banco
 
 Agora que já buscamos as informações do banco, esta na hora de enviar para  o banco,  para isto teremos um método para o envio.
 
@@ -918,6 +896,17 @@ Com esta parte o nosso banco recebeu os dados, lembrando, nehum dado foi tratado
 Após o envio dos dados a parte do FrontEnd deve ficar limpa para o recebimento dos próximos dados. 
 
 
+- [x]  Aula 27 - Criando componentes de mensagens do sistema
+
+Agora que conseguimos buscar e salvar os dados no backend, esta na hora de avisar ao usuário que as informações dele foram salvas ou não. 
+
+Para isto iremos usar uma mensagem na tela, que será gerenciada pelo componente "Message.vue".
+
+A frase da mensagem será apresentada conforme o "v-show", a informação da mensagem será criada no pai  e repassada para o filho apresentar através do 'props'. 
+
+A mensagem apresentará o número do pedido, que vem do banco e é apresentado  a partir do 'res.id' desta forma ``` ${res.id} ```  ( dentro da frase ). Lembrando que a frase, por apresentar esta variável terá de ser apresentado com apostofes (`).
+
+O componente "Message" pode ser reaproveitado em qualquer outro componente,  e a mensagem que ele apresentará , por usar 'props' também mudará conforme o componente pai que o chamar/usar.  
 
 
 
@@ -928,9 +917,7 @@ Após o envio dos dados a parte do FrontEnd deve ficar limpa para o recebimento 
 
 
 
-
-
-
+- [ ]  Aula 28 - Criando a tela de pedidos ( Dashboard )
 
 
 
@@ -939,11 +926,6 @@ Após o envio dos dados a parte do FrontEnd deve ficar limpa para o recebimento 
 ~~~
 
 
-
-
-
-- [ ]  Aula 27 - Criando componentes de mensagens do sistema
-- [ ]  Aula 28 - Criando a tela de pedidos ( Dashboard )
 - [ ]  Aula 29 - Resgatando pedidos do banco
 - [ ]  Aula 30 - Recebendo os status dos Pedidos
 - [ ]  Aula 31 - Removendo pedidos do sistema

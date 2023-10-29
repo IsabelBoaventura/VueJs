@@ -145,6 +145,41 @@
       ],
       "status": "Solicitado",
       "id": 6
+    },
+    {
+      "nome": "Bruna",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opicionais": [
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "id": 7
+    },
+    {
+      "nome": "Gui",
+      "carne": "Picanha",
+      "pao": "Parmesão e Orégano",
+      "opicionais": [
+        "Bacon",
+        "Salame",
+        "Cebola roxa",
+        "Pepino",
+        "Tomate",
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "id": 8
+    },
+    {
+      "nome": "Vini",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opicionais": [
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 9
     }
   ]
 }
