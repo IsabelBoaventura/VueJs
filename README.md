@@ -908,16 +908,7 @@ A mensagem apresentará o número do pedido, que vem do banco e é apresentado  
 
 O componente "Message" pode ser reaproveitado em qualquer outro componente,  e a mensagem que ele apresentará , por usar 'props' também mudará conforme o componente pai que o chamar/usar.  
 
-
-
-
-
-
-
-
-
-
-- [ ]  Aula 28 - Criando a tela de pedidos ( Dashboard )
+- [x]  Aula 28 - Criando a tela de pedidos ( Dashboard )
 
 Agora vamos criar o Dashboard dos Hamburgers que já foram cadastrados.
 
@@ -932,11 +923,35 @@ Criamos a parte do HTML com informações ficticias e passamos para o CSS.
 
 
 
+
+
+- [ ]  Aula 29 - Resgatando pedidos do banco
+
+Agora buscando as informações do backend. 
+
+A instancia "v-for" será definida dentro da div que contém a classe "burger-table-row". Ou seja, o for será chamado na apresentação de cada linha da tabela.
+
+Será realizado um novo "v-for" dentro do "li" dos opcionais dos ingredientes, para todos os ingredientes serem apresentados. 
+
+Nosso json foi criado com a gramática incorreta da palavra "opcionais" ficando "opicionais". 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ~~~vue
 ~~~
 
 
-- [ ]  Aula 29 - Resgatando pedidos do banco
+
 - [ ]  Aula 30 - Recebendo os status dos Pedidos
 - [ ]  Aula 31 - Removendo pedidos do sistema
 - [ ]  Aula 32 - Atualização de Pedidos

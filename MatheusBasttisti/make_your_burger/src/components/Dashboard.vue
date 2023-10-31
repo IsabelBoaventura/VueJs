@@ -13,20 +13,19 @@
         </div>
 
         <div id="burger-table-rows">
-            <div class="burger-table-row">
-                <div class="order-number">1</div>
-                <div>Maria</div>
-                <div>4 queijos </div>
-                <div>Picanha</div>
+            <div class="burger-table-row" v-for="burger in burgers" :key="burger.id" >
+                <div class="order-number"> {{ burger.id }}</div>
+                <div> {{ burger.nome }}</div>
+                <div> {{ burger.pao }} </div>
+                <div>{{ burger.carne }}</div>
                 <div>
                     <ul>
-                        <li>Pepino</li>
-                        <li>Tomate</li>
+                        <li v-for="(opcional, index) in burger.opicionais" :key="index">{{ opcional }}</li>
                     </ul>
                 </div>
                 <div>
                     <select name="status" id="status" class="status">
-                        <option value="">Seleione Status</option>
+                        <option value="">Situação</option>
                     </select>
                     <button class="delete-btn">Cancelar</button>
                    
@@ -40,7 +39,30 @@
 
 <script>
 export default {
-    name: "Dashboard"
+    name: "Dashboard",
+    data(){
+        return{
+            burgers: null,
+            burger_id: null,
+            status: []
+        }
+    },
+    methods:{
+        async getPedidos(){
+            console.log( ' oi ');
+            const req = await fetch("http://localhost:3000/burgers");
+            const data_banco = await req.json();
+            this.burgers = data_banco ;
+
+            //resgatar os status 
+
+            console.log( this.burgers );
+
+        }        
+    },
+    mounted(){
+        this.getPedidos();
+    }
 }
 </script>
 
