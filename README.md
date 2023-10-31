@@ -919,6 +919,16 @@ O componente "Message" pode ser reaproveitado em qualquer outro componente,  e a
 
 - [ ]  Aula 28 - Criando a tela de pedidos ( Dashboard )
 
+Agora vamos criar o Dashboard dos Hamburgers que já foram cadastrados.
+
+Vamos criar o componente "Dashboard.vue" e importar ele dentro do componente Pai "Pedidos.vue";
+
+Verificar se já há algum Ha,burguer cadastrado, e criar a tabela com as informações.
+
+Criamos a parte do HTML com informações ficticias e passamos para o CSS.
+
+
+
 
 
 
