@@ -918,14 +918,7 @@ Verificar se já há algum Ha,burguer cadastrado, e criar a tabela com as inform
 
 Criamos a parte do HTML com informações ficticias e passamos para o CSS.
 
-
-
-
-
-
-
-
-- [ ]  Aula 29 - Resgatando pedidos do banco
+- [x]  Aula 29 - Resgatando pedidos do banco
 
 Agora buscando as informações do backend. 
 
@@ -936,13 +929,19 @@ Será realizado um novo "v-for" dentro do "li" dos opcionais dos ingredientes, p
 Nosso json foi criado com a gramática incorreta da palavra "opcionais" ficando "opicionais". 
 
 
+- [ ]  Aula 30 - Recebendo os status dos Pedidos
 
+O novo método para pegar os 'status' dos pedidos será chamado dentro do método "getPedidos()".
 
+Acrescentamos um 'v-for' para os 'option' do select da apresentação dos status.
 
+Mas o 'v-for' nos deixará livre para selecionar os status existentes, iremos precisar que o sistema deixe o status de cada hamburger da forma que esta no cadastro do pedido, para que no futuro possa ser moodificado. Para isto iremos usar o  `:selected` (marcação do que já foi selecionado). 
 
+~~~vue
+  <option v-for="s in status" :key="s.id" value="s.tipo" :selected="burger.status == s.tipo" >{{ s.tipo }}</option>
+~~~
 
-
-
+Isto faz com que todos os hamburgers fiquem com o status de quando foram gerados. Exatamente como esta na tabela de "burgers" que é o solicitado nesta parte do projeto.
 
 
 
@@ -951,8 +950,6 @@ Nosso json foi criado com a gramática incorreta da palavra "opcionais" ficando 
 ~~~
 
 
-
-- [ ]  Aula 30 - Recebendo os status dos Pedidos
 - [ ]  Aula 31 - Removendo pedidos do sistema
 - [ ]  Aula 32 - Atualização de Pedidos
 - [ ]  Aula 33 - Mensagens nas atualizações
