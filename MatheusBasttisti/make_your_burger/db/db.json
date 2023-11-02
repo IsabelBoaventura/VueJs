@@ -105,7 +105,7 @@
         "Tomate",
         "Cheddar"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 8
     },
     {
@@ -115,7 +115,7 @@
       "opicionais": [
         "Tomate"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 9
     },
     {
@@ -126,8 +126,20 @@
         "Tomate",
         "Cheddar"
       ],
-      "status": "Solicitado",
+      "status": "Deletado",
       "id": 10
+    },
+    {
+      "nome": "Ingrid",
+      "carne": "Alcatra",
+      "pao": "Italiano Branco",
+      "opicionais": [
+        "Bacon",
+        "Salame",
+        "Cebola roxa"
+      ],
+      "status": "Em produção",
+      "id": 11
     }
   ]
 }

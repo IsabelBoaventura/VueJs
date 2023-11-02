@@ -943,14 +943,7 @@ Mas o 'v-for' nos deixará livre para selecionar os status existentes, iremos pr
 
 Isto faz com que todos os hamburgers fiquem com o status de quando foram gerados. Exatamente como esta na tabela de "burgers" que é o solicitado nesta parte do projeto.
 
-
-
-
-
-
-
-- [ ]  Aula 31 - Removendo pedidos do sistema
-
+- [x]  Aula 31 - Removendo pedidos do sistema
 
 Vamos adicionar a opção de deletar pedido.
 
@@ -972,13 +965,25 @@ A chamada da requisição deste item será modificado, pois iremos passar para e
 Depois de deletado este pedido, solicitamos que a página recarregue os pedidos novamente,  ( getPedidos() ) para apresentar apenas os que não foram modificados. 
 
 
+- [x]  Aula 32 - Atualização de Pedidos
+
+Neste caso, será para a atualização do status do pedido. 
+
+O método "PATCH" é semelhante ao método de update, sua diferença é que ele irá modificar apenas o campo selecionado e nada mais. 
+
+Ao atualizar a página dos pedidos os dados se mantem.
 
 
 
- 
- 
- 
 
+
+
+
+
+
+
+
+- [ ]  Aula 33 - Mensagens nas atualizações
 
 
 
@@ -989,10 +994,6 @@ Depois de deletado este pedido, solicitamos que a página recarregue os pedidos 
 
 
 
-
-
-- [ ]  Aula 32 - Atualização de Pedidos
-- [ ]  Aula 33 - Mensagens nas atualizações
 - [ ]  Aula 34 - #Conclusão do Curso!
 
 
