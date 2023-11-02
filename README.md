@@ -974,35 +974,12 @@ O método "PATCH" é semelhante ao método de update, sua diferença é que ele 
 Ao atualizar a página dos pedidos os dados se mantem.
 
 
-
-
-
-
-
-
-
-
-
-- [ ]  Aula 33 - Mensagens nas atualizações
-
+- [x]  Aula 33 - Mensagens nas atualizações
 
 Vamos reutilizar o componente "Message.vue" para  o componente "Dashboard", ela será usada em cada mundança de status do pedido. 
 
 
-
-
-
-~~~vue
-
-~~~
-
-
-
-
-- [ ]  Aula 34 - #Conclusão do Curso!
-
-
-
+- [x]  Aula 34 - #Conclusão do Curso!
 
 
 ## Dúvidas
