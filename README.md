@@ -929,7 +929,7 @@ Será realizado um novo "v-for" dentro do "li" dos opcionais dos ingredientes, p
 Nosso json foi criado com a gramática incorreta da palavra "opcionais" ficando "opicionais". 
 
 
-- [ ]  Aula 30 - Recebendo os status dos Pedidos
+- [x]  Aula 30 - Recebendo os status dos Pedidos
 
 O novo método para pegar os 'status' dos pedidos será chamado dentro do método "getPedidos()".
 
@@ -946,11 +946,51 @@ Isto faz com que todos os hamburgers fiquem com o status de quando foram gerados
 
 
 
-~~~vue
-~~~
+
 
 
 - [ ]  Aula 31 - Removendo pedidos do sistema
+
+
+Vamos adicionar a opção de deletar pedido.
+
+No botão de deletar iremos adicionar o método "deleteBurguer" iniciado com o "id" desta item selecionado.
+
+~~~vue
+ <button class="delete-btn" @click="deleteBurger(burger.id)" >Cancelar</button>
+~~~
+
+E iremos criar este método. 
+
+A chamada da requisição deste item será modificado, pois iremos passar para ela o "ID" que queremos e a ação, neste caso "DELETE", deletar esta id que será passado.
+
+
+~~~vue
+ const req = await fetch(`http://localhost:3000/burgers/${id}`, { method: "DELETE"});
+~~~
+
+Depois de deletado este pedido, solicitamos que a página recarregue os pedidos novamente,  ( getPedidos() ) para apresentar apenas os que não foram modificados. 
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+~~~vue
+
+~~~
+
+
+
+
+
+
 - [ ]  Aula 32 - Atualização de Pedidos
 - [ ]  Aula 33 - Mensagens nas atualizações
 - [ ]  Aula 34 - #Conclusão do Curso!
