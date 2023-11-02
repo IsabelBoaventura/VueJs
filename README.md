@@ -986,6 +986,11 @@ Ao atualizar a página dos pedidos os dados se mantem.
 - [ ]  Aula 33 - Mensagens nas atualizações
 
 
+Vamos reutilizar o componente "Message.vue" para  o componente "Dashboard", ela será usada em cada mundança de status do pedido. 
+
+
+
+
 
 ~~~vue
 
