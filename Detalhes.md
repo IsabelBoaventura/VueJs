@@ -2,6 +2,15 @@
 
 Projeto de **FrondEnd** em Vue.js um site de solicitação de lanche. 
 
+Este projeto tem como objetivo uma introdução ao framework vuejs para depois poder ser trabalhado com o Laravel com vue. 
+
+Este conteudo ficará dividido em dois projetos: **2_projeto_vue** e **make_your_burger**;
+
+No projeto "2_projeto_vue" haverá exemplos de como usar algumas funções  e elementos do vue;
+No projeto "make_your_burger" será o projeto apresentado da aula 18 em diante.
+
+
+
 ##  :walking: Caminho
 
 > Tutorial:
