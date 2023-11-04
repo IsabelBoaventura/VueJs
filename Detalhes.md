@@ -2,20 +2,17 @@
 
 Projeto de **FrondEnd** em Vue.js um site de solicitação de lanche. 
 
-Este projeto tem como objetivo uma introdução ao framework vuejs para depois poder ser trabalhado com o Laravel com vue. 
-
 ##  :walking: Caminho
 
-> Tutorial: 
-
-	https://www.youtube.com/playlist?list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL
+> Tutorial:
+		https://www.youtube.com/playlist?list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL
 		
 > Vuejs: 
-	https://vuejs.org/guide/quick-start.html#using-vue-from-cdn
+		https://vuejs.org/guide/quick-start.html#using-vue-from-cdn
 	
-> CDN:
-
-<code><script src="https://unpkg.com/vue@3/dist/vue.global.js"> </script></code>
+ 
+> CDN 
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 ## :wrench: Instalar o VueJs via CLI
 
@@ -23,11 +20,10 @@ Este projeto tem como objetivo uma introdução ao framework vuejs para depois p
 	https://br.vuejs.org/v2/guide/installation#NPM
 	
 > Comando:
-
-<code>	npm install -g @vue/cli</code> ( Não funcionou);
+	npm install -g @vue/cli ( Não funcionou);
 
 > Na documentação do vue:
-	<code>npm install vue</code> ( funcionou );
+	npm install vue ( funcionou );
 	
 Caso a versão que esta instalada no pc agora, não for a mais recente, pode fazer a atualização do Vue. 
 
@@ -1066,14 +1062,6 @@ var adicionar2 = function(numero) {
 
 ~~~vue
 ~~~
-
-
-
-
-
-A empresa Amelia Terezinha Moura Boaventura de CNPJ 49.573.230/0001-39, fundada em 13/02/2023, está com a situação cadastral ATIVA na Receita Federal. Essa empresa é uma MATRIZ do tipo Empresário (Individual), de porte "MEI" que está localizada em Porto Alegre - RS. 
-
-
 
 
 
