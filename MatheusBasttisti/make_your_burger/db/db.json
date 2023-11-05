@@ -105,7 +105,7 @@
         "Tomate",
         "Cheddar"
       ],
-      "status": "Deletado",
+      "status": "Solicitado",
       "id": 10
     },
     {
@@ -117,8 +117,39 @@
         "Salame",
         "Cebola roxa"
       ],
-      "status": "Em produção",
+      "status": "Solicitado",
       "id": 11
+    },
+    {
+      "nome": "Uchoa",
+      "carne": "Alcatra",
+      "pao": "3 Queijos",
+      "opicionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "id": 12
+    },
+    {
+      "nome": "Isabel ",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opicionais": [
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 14
+    },
+    {
+      "nome": "treste",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
+      "opicionais": [
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 15
     }
   ]
 }

@@ -1074,3 +1074,8 @@ var adicionar2 = function(numero) {
 
 
 
+
+https://www.youtube.com/watch?v=wsAQQioPIJs&list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL
+
+
+
