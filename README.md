@@ -187,5 +187,8 @@ E o arquivo **Detalhes.md**, neste arquivo há mais detalhes referente ao projet
 
 Finalizando o projeto, concluimos com um backend a criação de pedidos de Hamburgers personalidados por pessoa. Criamos, alteramos e excluimos estes pedidos. 
 
+![image](https://github.com/IsabelBoaventura/VueJs/assets/1613816/739252fc-9121-4091-a4a4-41f50102fbdb)
+
+
 
 
